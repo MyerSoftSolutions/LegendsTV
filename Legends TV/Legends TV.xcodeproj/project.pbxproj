@@ -1,0 +1,556 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D904B16B1EC9F17E006525C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B16A1EC9F17E006525C1 /* AppDelegate.swift */; };
+		D904B16D1EC9F17E006525C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B16C1EC9F17E006525C1 /* ViewController.swift */; };
+		D904B1701EC9F17E006525C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D904B16E1EC9F17E006525C1 /* Main.storyboard */; };
+		D904B1731EC9F17E006525C1 /* Legends_TV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D904B1711EC9F17E006525C1 /* Legends_TV.xcdatamodeld */; };
+		D904B1751EC9F17E006525C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D904B1741EC9F17E006525C1 /* Assets.xcassets */; };
+		D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */; };
+		D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B1821EC9F17E006525C1 /* Legends_TVTests.swift */; };
+		D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D904B17F1EC9F17E006525C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D904B15F1EC9F17E006525C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D904B1661EC9F17E006525C1;
+			remoteInfo = "Legends TV";
+		};
+		D904B18A1EC9F17E006525C1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D904B15F1EC9F17E006525C1 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D904B1661EC9F17E006525C1;
+			remoteInfo = "Legends TV";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D904B1671EC9F17E006525C1 /* Legends TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Legends TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D904B16A1EC9F17E006525C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D904B16C1EC9F17E006525C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D904B16F1EC9F17E006525C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D904B1721EC9F17E006525C1 /* Legends_TV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Legends_TV.xcdatamodel; sourceTree = "<group>"; };
+		D904B1741EC9F17E006525C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D904B1771EC9F17E006525C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D904B1791EC9F17E006525C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D904B17E1EC9F17E006525C1 /* Legends TVTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Legends TVTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D904B1821EC9F17E006525C1 /* Legends_TVTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legends_TVTests.swift; sourceTree = "<group>"; };
+		D904B1841EC9F17E006525C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D904B1891EC9F17E006525C1 /* Legends TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Legends TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legends_TVUITests.swift; sourceTree = "<group>"; };
+		D904B18F1EC9F17E006525C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D904B1641EC9F17E006525C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D904B17B1EC9F17E006525C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D904B1861EC9F17E006525C1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D904B15E1EC9F17E006525C1 = {
+			isa = PBXGroup;
+			children = (
+				D904B1691EC9F17E006525C1 /* Legends TV */,
+				D904B1811EC9F17E006525C1 /* Legends TVTests */,
+				D904B18C1EC9F17E006525C1 /* Legends TVUITests */,
+				D904B1681EC9F17E006525C1 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D904B1681EC9F17E006525C1 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D904B1671EC9F17E006525C1 /* Legends TV.app */,
+				D904B17E1EC9F17E006525C1 /* Legends TVTests.xctest */,
+				D904B1891EC9F17E006525C1 /* Legends TVUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D904B1691EC9F17E006525C1 /* Legends TV */ = {
+			isa = PBXGroup;
+			children = (
+				D904B16A1EC9F17E006525C1 /* AppDelegate.swift */,
+				D904B16C1EC9F17E006525C1 /* ViewController.swift */,
+				D904B16E1EC9F17E006525C1 /* Main.storyboard */,
+				D904B1741EC9F17E006525C1 /* Assets.xcassets */,
+				D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */,
+				D904B1791EC9F17E006525C1 /* Info.plist */,
+				D904B1711EC9F17E006525C1 /* Legends_TV.xcdatamodeld */,
+			);
+			path = "Legends TV";
+			sourceTree = "<group>";
+		};
+		D904B1811EC9F17E006525C1 /* Legends TVTests */ = {
+			isa = PBXGroup;
+			children = (
+				D904B1821EC9F17E006525C1 /* Legends_TVTests.swift */,
+				D904B1841EC9F17E006525C1 /* Info.plist */,
+			);
+			path = "Legends TVTests";
+			sourceTree = "<group>";
+		};
+		D904B18C1EC9F17E006525C1 /* Legends TVUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */,
+				D904B18F1EC9F17E006525C1 /* Info.plist */,
+			);
+			path = "Legends TVUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D904B1661EC9F17E006525C1 /* Legends TV */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D904B1921EC9F17E006525C1 /* Build configuration list for PBXNativeTarget "Legends TV" */;
+			buildPhases = (
+				D904B1631EC9F17E006525C1 /* Sources */,
+				D904B1641EC9F17E006525C1 /* Frameworks */,
+				D904B1651EC9F17E006525C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Legends TV";
+			productName = "Legends TV";
+			productReference = D904B1671EC9F17E006525C1 /* Legends TV.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D904B17D1EC9F17E006525C1 /* Legends TVTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D904B1951EC9F17E006525C1 /* Build configuration list for PBXNativeTarget "Legends TVTests" */;
+			buildPhases = (
+				D904B17A1EC9F17E006525C1 /* Sources */,
+				D904B17B1EC9F17E006525C1 /* Frameworks */,
+				D904B17C1EC9F17E006525C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D904B1801EC9F17E006525C1 /* PBXTargetDependency */,
+			);
+			name = "Legends TVTests";
+			productName = "Legends TVTests";
+			productReference = D904B17E1EC9F17E006525C1 /* Legends TVTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D904B1881EC9F17E006525C1 /* Legends TVUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D904B1981EC9F17E006525C1 /* Build configuration list for PBXNativeTarget "Legends TVUITests" */;
+			buildPhases = (
+				D904B1851EC9F17E006525C1 /* Sources */,
+				D904B1861EC9F17E006525C1 /* Frameworks */,
+				D904B1871EC9F17E006525C1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D904B18B1EC9F17E006525C1 /* PBXTargetDependency */,
+			);
+			name = "Legends TVUITests";
+			productName = "Legends TVUITests";
+			productReference = D904B1891EC9F17E006525C1 /* Legends TVUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D904B15F1EC9F17E006525C1 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Legends Media";
+				TargetAttributes = {
+					D904B1661EC9F17E006525C1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X557HAPU2P;
+						ProvisioningStyle = Automatic;
+					};
+					D904B17D1EC9F17E006525C1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X557HAPU2P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D904B1661EC9F17E006525C1;
+					};
+					D904B1881EC9F17E006525C1 = {
+						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = X557HAPU2P;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D904B1661EC9F17E006525C1;
+					};
+				};
+			};
+			buildConfigurationList = D904B1621EC9F17E006525C1 /* Build configuration list for PBXProject "Legends TV" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D904B15E1EC9F17E006525C1;
+			productRefGroup = D904B1681EC9F17E006525C1 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D904B1661EC9F17E006525C1 /* Legends TV */,
+				D904B17D1EC9F17E006525C1 /* Legends TVTests */,
+				D904B1881EC9F17E006525C1 /* Legends TVUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D904B1651EC9F17E006525C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */,
+				D904B1751EC9F17E006525C1 /* Assets.xcassets in Resources */,
+				D904B1701EC9F17E006525C1 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D904B17C1EC9F17E006525C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D904B1871EC9F17E006525C1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D904B1631EC9F17E006525C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D904B16D1EC9F17E006525C1 /* ViewController.swift in Sources */,
+				D904B16B1EC9F17E006525C1 /* AppDelegate.swift in Sources */,
+				D904B1731EC9F17E006525C1 /* Legends_TV.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D904B17A1EC9F17E006525C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D904B1851EC9F17E006525C1 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D904B1801EC9F17E006525C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D904B1661EC9F17E006525C1 /* Legends TV */;
+			targetProxy = D904B17F1EC9F17E006525C1 /* PBXContainerItemProxy */;
+		};
+		D904B18B1EC9F17E006525C1 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D904B1661EC9F17E006525C1 /* Legends TV */;
+			targetProxy = D904B18A1EC9F17E006525C1 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D904B16E1EC9F17E006525C1 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D904B16F1EC9F17E006525C1 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D904B1771EC9F17E006525C1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D904B1901EC9F17E006525C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D904B1911EC9F17E006525C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D904B1931EC9F17E006525C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = "Legends TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D904B1941EC9F17E006525C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = "Legends TV/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TV";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D904B1961EC9F17E006525C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = "Legends TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Legends TV.app/Legends TV";
+			};
+			name = Debug;
+		};
+		D904B1971EC9F17E006525C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = "Legends TVTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TVTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Legends TV.app/Legends TV";
+			};
+			name = Release;
+		};
+		D904B1991EC9F17E006525C1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = "Legends TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Legends TV";
+			};
+			name = Debug;
+		};
+		D904B19A1EC9F17E006525C1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = X557HAPU2P;
+				INFOPLIST_FILE = "Legends TVUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TVUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "Legends TV";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D904B1621EC9F17E006525C1 /* Build configuration list for PBXProject "Legends TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D904B1901EC9F17E006525C1 /* Debug */,
+				D904B1911EC9F17E006525C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D904B1921EC9F17E006525C1 /* Build configuration list for PBXNativeTarget "Legends TV" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D904B1931EC9F17E006525C1 /* Debug */,
+				D904B1941EC9F17E006525C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D904B1951EC9F17E006525C1 /* Build configuration list for PBXNativeTarget "Legends TVTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D904B1961EC9F17E006525C1 /* Debug */,
+				D904B1971EC9F17E006525C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D904B1981EC9F17E006525C1 /* Build configuration list for PBXNativeTarget "Legends TVUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D904B1991EC9F17E006525C1 /* Debug */,
+				D904B19A1EC9F17E006525C1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D904B1711EC9F17E006525C1 /* Legends_TV.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D904B1721EC9F17E006525C1 /* Legends_TV.xcdatamodel */,
+			);
+			currentVersion = D904B1721EC9F17E006525C1 /* Legends_TV.xcdatamodel */;
+			path = Legends_TV.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D904B15F1EC9F17E006525C1 /* Project object */;
+}
