@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		D904B16B1EC9F17E006525C1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B16A1EC9F17E006525C1 /* AppDelegate.swift */; };
-		D904B16D1EC9F17E006525C1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B16C1EC9F17E006525C1 /* ViewController.swift */; };
 		D904B1701EC9F17E006525C1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D904B16E1EC9F17E006525C1 /* Main.storyboard */; };
 		D904B1731EC9F17E006525C1 /* Legends_TV.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D904B1711EC9F17E006525C1 /* Legends_TV.xcdatamodeld */; };
 		D904B1751EC9F17E006525C1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D904B1741EC9F17E006525C1 /* Assets.xcassets */; };
@@ -18,6 +17,9 @@
 		D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */; };
 		D98145D01ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */; };
 		D98145D11ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */; };
+		D98145D31ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */ = {isa = PBXBuildFile; fileRef = D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */; };
+		D98145D41ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */ = {isa = PBXBuildFile; fileRef = D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */; };
+		D98145D51ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */ = {isa = PBXBuildFile; fileRef = D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,7 +42,6 @@
 /* Begin PBXFileReference section */
 		D904B1671EC9F17E006525C1 /* Legends TV.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Legends TV.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D904B16A1EC9F17E006525C1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D904B16C1EC9F17E006525C1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D904B16F1EC9F17E006525C1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D904B1721EC9F17E006525C1 /* Legends_TV.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Legends_TV.xcdatamodel; sourceTree = "<group>"; };
 		D904B1741EC9F17E006525C1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -53,6 +54,7 @@
 		D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legends_TVUITests.swift; sourceTree = "<group>"; };
 		D904B18F1EC9F17E006525C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVHomeViewController.swift; sourceTree = "<group>"; };
+		D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "VideoFeedApril2017-2.json"; path = "../VideoFeedApril2017-2.json"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,13 +106,13 @@
 			isa = PBXGroup;
 			children = (
 				D904B16A1EC9F17E006525C1 /* AppDelegate.swift */,
-				D904B16C1EC9F17E006525C1 /* ViewController.swift */,
 				D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */,
 				D904B16E1EC9F17E006525C1 /* Main.storyboard */,
 				D904B1741EC9F17E006525C1 /* Assets.xcassets */,
 				D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */,
 				D904B1791EC9F17E006525C1 /* Info.plist */,
 				D904B1711EC9F17E006525C1 /* Legends_TV.xcdatamodeld */,
+				D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */,
 			);
 			path = "Legends TV";
 			sourceTree = "<group>";
@@ -244,6 +246,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */,
+				D98145D31ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
 				D904B1751EC9F17E006525C1 /* Assets.xcassets in Resources */,
 				D904B1701EC9F17E006525C1 /* Main.storyboard in Resources */,
 			);
@@ -253,6 +256,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98145D41ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98145D51ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -271,7 +276,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
-				D904B16D1EC9F17E006525C1 /* ViewController.swift in Sources */,
 				D904B16B1EC9F17E006525C1 /* AppDelegate.swift in Sources */,
 				D904B1731EC9F17E006525C1 /* Legends_TV.xcdatamodeld in Sources */,
 			);

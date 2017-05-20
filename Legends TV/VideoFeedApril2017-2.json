@@ -1,0 +1,206 @@
+{
+  "providerName": "Legends TV",
+  "lastUpdated": "2017-04-03T10:00:00+00:00",
+  "language": "en",
+  "categories": [
+    {
+      "category": {
+        "name": "Featured",
+        "order": "manual",
+        "playlistName": "featured content"
+      }
+    },
+    {
+      "category": {
+        "name": "Recently Added",
+        "order": "manual",
+        "playlistName": "recently added"
+      }
+    }
+  ],
+
+  "playlists": [
+    {
+      "playlist": {
+        "name": "featured content",
+        "itemIds": [
+          "justintimberlakemanofthehour",
+          "michaeljacksonthejourney",
+          "djchuckoriginalcore"
+        ]
+      }
+    },
+    {
+      "playlist": {
+        "name": "recently added",
+        "itemIds": [ "justintimberlakemanofthehour", "michaeljacksonthejourney", "djchuckoriginalcore", "justinbieberlimitless", "mileycyrusuleashed", "wu-tang_saga", "ferryCorstenWKND" ]
+      }
+    }
+  ],
+
+  "movies": [
+    {
+      "movie": {
+        "content": {
+          "dateadded": "2017-04-03T04:00:00+00:00",
+          "videos": {
+            "video": {
+              "quality": "FHD",
+              "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/aed07e78-31b6-4037-b7d0-22c4951fe870/JUSTIN_TIMBERLAKE-Feature.ism/manifest(format=m3u8-aapl)",
+              "videoType": "HLS"
+            }
+          },
+          "duration": "3177",
+          "captions": ""
+        },
+        "genres": "documentary",
+        "id": "justintimberlakemanofthehour",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Justin Timberlake!",
+        "longDescription": "Justin Timberlake!!",
+        "thumbnail": "http://www.legendstv.com/RokuGraphics/Justin%20Timberlake_1280x720.jpg",
+        "title": "Justin Timberlake: Man of the Hour"
+      }
+    },
+    {
+
+      "movie": {
+        "content": {
+          "dateadded": "2017-04-03T04:00:00+00:00",
+          "videos": {
+            "video": {
+              "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/3db87d70-eb5b-47f2-bad5-8f3202e5c1a3/MJ_TheJourney_v3-VIMEO_HD.ism/manifest(format=m3u8-aapl)",
+              "quality": "FHD",
+              "videoType": "HLS"
+            }
+          },
+          "duration": "4531",
+          "captions": ""
+        },
+        "genres": "documentary",
+        "id": "michaeljacksonthejourney",
+        "longDescription": "Michael Jackson!!",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Michael Jackson!",
+        "thumbnail": "http://www.legendstv.com/RokuGraphics/Michael%20Jackson_1280x720.jpg",
+        "title": "Michael Jackson: The Journey"
+      }
+    },
+    {
+      "movie": {
+        "content": {
+          "dateadded": "2017-04-03T04:00:00+00:00",
+          "videos": {
+            "video": {
+              "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/a39507e6-2422-4ee6-ae1c-3d41f16caa9e/ODM_000406_EDM_24_Live_Dirty_Dutch_Back_to_the_Original_Core_ENG_HD24.ism/manifest(format=m3u8-aapl)",
+              "quality": "FHD",
+              "videoType": "HLS"
+            }
+          },
+          "duration": "1917",
+          "captions": ""
+        },
+        "genres": "documentary",
+        "id": "djchuckoriginalcore",
+        "releaseDate": "2014-01-01",
+        "shortDescription": "Back to the Original Core!",
+        "longDescription": "Back to the Original Core!!",
+        "thumbnail": "http://www.legendstv.com/RokuGraphics/Dj%20Chuckie%20Final.png",
+        "title": "DJ Chuckie: Back to the Original Core"
+      }
+    },
+    {
+      "movie": {
+        "content": {
+          "dateadded": "2017-04-03T04:00:00+00:00",
+          "videos": {
+            "video": {
+              "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/959d3df1-cfa3-4baa-8e67-1706f75b39be/JUSTIN_BIEBER_LIMITLESS-Feature.ism/manifest(format=m3u8-aapl)",
+              "quality": "FHD",
+              "videoType": "HLS"
+            }
+          },
+          "duration": "3856",
+          "captions": ""
+        },
+        "genres": "documentary",
+        "id": "justinbieberlimitless",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Justin Bieber!",
+        "longDescription": "Justin Bieber!!",
+        "thumbnail": "http://www.legendstv.com/RokuGraphics/Justin%20Bieber%20Limitless_Legends_1280x720.jpg",
+        "title": "Justin Bieber: Limitless"
+      }
+    },
+    {
+      "movie": {
+        "content": {
+          "dateadded": "2017-04-03T04:00:00+00:00",
+          "videos": {
+            "video": {
+              "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/15893f0a-91d7-4e89-a378-b2f46fed117b/MILEY_CYRUS_UNLEASHED-Feature.ism/manifest(format=m3u8-aapl)",
+              "quality": "FHD",
+              "videoType": "HLS"
+            }
+          },
+          "duration": "3618",
+          "captions": ""
+        },
+        "genres": "documentary",
+        "id": "mileycyrusuleashed",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Miley Cyrus!",
+        "longDescription": "Miley Cyrus!!",
+        "thumbnail": "http://www.legendstv.com/RokuGraphics/Miley%20Cyrus_1280x720.jpg",
+        "title": "Miley Cyrus Unleashed"
+      }
+    },
+    {
+      "movie": {
+        "content": {
+          "captions": "",
+          "dateadded": "2017-04-03T04:00:00+00:00",
+          "duration": "4522",
+          "videos": {
+            "video": {
+              "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/c660c20d-3fef-4a2e-8181-bae909772389/ODM_001008_Ferry_Corsten_WKNDR_A_Year_in_the_Life_of_2013_ENG_HDR24.ism/manifest(format=m3u8-aapl)",
+              "quality": "FHD",
+              "videoType": "HLS"
+            }
+          }
+        },
+        "genres": "documentary",
+        "id": "ferryCorstenWKND",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Ferry Corsten!",
+        "longDescription": "Ferry Corsten!!",
+        "thumbnail": "http://www.legendstv.com/RokuGraphics/Ferry%20Corsten%20WKND.jpg",
+        "title": "Ferry Corsten: WKND"
+      }
+    },
+    {
+      "movie": {
+        "content": {
+          "dateadded": "2017-04-03T04:00:00+00:00",
+          "videos": {
+            "video": {
+              "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/fe260790-cea4-436d-b1fe-01f76a89d17f/WU%20TANG%20SAGA_v2.ism/manifest(format=m3u8-aapl-v3)",
+              "quality": "HD",
+              "videoType": "HLS"
+            }
+          },
+          "duration": "7741",
+          "captions": ""
+        },
+        "genres": "documentary",
+        "id": "wu-tang_saga",
+        "releaseDate": "2010-10-05",
+        "shortDescription": "Wu-Tang!",
+        "longDescription": "Wu-Tang Saga!!",
+        "thumbnail": "http://www.legendstv.com/RokuGraphics/Wu-Tang%20Saga.jpg",
+        "title": "Wu-Tang Saga"
+      }
+    }
+  ]
+}
+ 
