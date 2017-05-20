@@ -15,6 +15,9 @@
 		D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */; };
 		D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B1821EC9F17E006525C1 /* Legends_TVTests.swift */; };
 		D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */; };
+		D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */; };
+		D98145D01ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */; };
+		D98145D11ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,7 @@
 		D904B1891EC9F17E006525C1 /* Legends TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Legends TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legends_TVUITests.swift; sourceTree = "<group>"; };
 		D904B18F1EC9F17E006525C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVHomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +105,7 @@
 			children = (
 				D904B16A1EC9F17E006525C1 /* AppDelegate.swift */,
 				D904B16C1EC9F17E006525C1 /* ViewController.swift */,
+				D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */,
 				D904B16E1EC9F17E006525C1 /* Main.storyboard */,
 				D904B1741EC9F17E006525C1 /* Assets.xcassets */,
 				D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */,
@@ -265,6 +270,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D904B16D1EC9F17E006525C1 /* ViewController.swift in Sources */,
 				D904B16B1EC9F17E006525C1 /* AppDelegate.swift in Sources */,
 				D904B1731EC9F17E006525C1 /* Legends_TV.xcdatamodeld in Sources */,
@@ -275,6 +281,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98145D01ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98145D11ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +528,7 @@
 				D904B1941EC9F17E006525C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D904B1951EC9F17E006525C1 /* Build configuration list for PBXNativeTarget "Legends TVTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +537,7 @@
 				D904B1971EC9F17E006525C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D904B1981EC9F17E006525C1 /* Build configuration list for PBXNativeTarget "Legends TVUITests" */ = {
 			isa = XCConfigurationList;
@@ -536,6 +546,7 @@
 				D904B19A1EC9F17E006525C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
