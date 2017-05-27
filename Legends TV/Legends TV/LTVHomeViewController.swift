@@ -21,10 +21,11 @@ class LTSavedVidCollectionCell : UICollectionViewCell {
 class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
     @IBOutlet var savedVidsViewHeightCon: NSLayoutConstraint!
 
+    let jsonHandler = JSONHandler.defaultHandler
     @IBOutlet var savedVidBtnHeightCon: NSLayoutConstraint!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        print(jsonHandler.jsonFile!)
 //        self.savedVidBtnHeightCon.constant = 0
 //        self.savedVidsViewHeightCon.constant = 0
 
@@ -33,8 +34,6 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
     
     override func viewWillLayoutSubviews() {
         super.viewWillLayoutSubviews()
-
-        
 
     }
 

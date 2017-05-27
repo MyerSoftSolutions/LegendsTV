@@ -20,6 +20,9 @@
 		D98145D31ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */ = {isa = PBXBuildFile; fileRef = D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */; };
 		D98145D41ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */ = {isa = PBXBuildFile; fileRef = D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */; };
 		D98145D51ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */ = {isa = PBXBuildFile; fileRef = D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */; };
+		D9E39B8E1ED9D17400061EEA /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */; };
+		D9E39B8F1ED9D17400061EEA /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */; };
+		D9E39B901ED9D17400061EEA /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +58,7 @@
 		D904B18F1EC9F17E006525C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVHomeViewController.swift; sourceTree = "<group>"; };
 		D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "VideoFeedApril2017-2.json"; path = "../VideoFeedApril2017-2.json"; sourceTree = "<group>"; };
+		D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +117,7 @@
 				D904B1791EC9F17E006525C1 /* Info.plist */,
 				D904B1711EC9F17E006525C1 /* Legends_TV.xcdatamodeld */,
 				D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */,
+				D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */,
 			);
 			path = "Legends TV";
 			sourceTree = "<group>";
@@ -275,6 +280,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E39B8E1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D904B16B1EC9F17E006525C1 /* AppDelegate.swift in Sources */,
 				D904B1731EC9F17E006525C1 /* Legends_TV.xcdatamodeld in Sources */,
@@ -286,6 +292,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98145D01ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
+				D9E39B8F1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -295,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D98145D11ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
+				D9E39B901ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
