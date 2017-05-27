@@ -40,12 +40,12 @@
                                                     <autoresizingMask key="autoresizingMask"/>
                                                     <subviews>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sHJ-np-0NA">
-                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="125"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="375" height="132"/>
                                                         </imageView>
                                                     </subviews>
                                                     <constraints>
                                                         <constraint firstItem="sHJ-np-0NA" firstAttribute="leading" secondItem="WZ8-OX-FWe" secondAttribute="leading" id="OgH-0s-Sly"/>
-                                                        <constraint firstAttribute="bottomMargin" secondItem="sHJ-np-0NA" secondAttribute="bottom" constant="9" id="QbJ-a8-TZI"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="sHJ-np-0NA" secondAttribute="bottom" constant="2" id="QbJ-a8-TZI"/>
                                                         <constraint firstAttribute="trailing" secondItem="sHJ-np-0NA" secondAttribute="trailing" id="kpB-IN-2aY"/>
                                                         <constraint firstItem="sHJ-np-0NA" firstAttribute="top" secondItem="WZ8-OX-FWe" secondAttribute="top" id="vUT-DT-jWn"/>
                                                     </constraints>
@@ -93,7 +93,7 @@
                                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7GF-Bo-V3h">
                                                 <rect key="frame" x="0.0" y="38" width="375" height="118"/>
                                                 <color key="backgroundColor" red="0.94509803920000002" green="0.95686274510000002" blue="0.92941176469999998" alpha="0.80709546229999996" colorSpace="custom" customColorSpace="sRGB"/>
-                                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d7d-mw-c1l">
+                                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="d7d-mw-c1l">
                                                     <size key="itemSize" width="225" height="99"/>
                                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -101,7 +101,7 @@
                                                 </collectionViewFlowLayout>
                                                 <cells>
                                                     <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="SavedVidCell" id="XLs-Yr-Ztt" customClass="LTSavedVidCollectionCell" customModule="Legends_TV" customModuleProvider="target">
-                                                        <rect key="frame" x="75" y="0.0" width="225" height="99"/>
+                                                        <rect key="frame" x="0.0" y="9.5" width="225" height="99"/>
                                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                                             <rect key="frame" x="0.0" y="0.0" width="225" height="99"/>
@@ -127,6 +127,9 @@
                                                             <constraint firstItem="NCw-w8-1vJ" firstAttribute="top" secondItem="XLs-Yr-Ztt" secondAttribute="top" id="mpH-WL-eeM"/>
                                                             <constraint firstAttribute="bottom" secondItem="NCw-w8-1vJ" secondAttribute="bottom" id="xLF-yz-h4R"/>
                                                         </constraints>
+                                                        <connections>
+                                                            <outlet property="imgView" destination="NCw-w8-1vJ" id="VJM-kc-Lxt"/>
+                                                        </connections>
                                                     </collectionViewCell>
                                                 </cells>
                                                 <connections>
@@ -160,7 +163,7 @@
                                     <constraint firstAttribute="trailing" secondItem="jZh-h9-rrn" secondAttribute="trailing" id="6E3-s1-ChW"/>
                                     <constraint firstItem="JRF-wR-uwd" firstAttribute="leading" secondItem="wDl-Ia-d9w" secondAttribute="leading" id="Adg-my-ECO"/>
                                     <constraint firstItem="76z-3m-XXY" firstAttribute="leading" secondItem="wDl-Ia-d9w" secondAttribute="leading" id="B0V-GH-wIu"/>
-                                    <constraint firstAttribute="bottom" secondItem="1qC-KE-KKk" secondAttribute="bottom" constant="20" id="GL3-pr-WyZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="1qC-KE-KKk" secondAttribute="bottom" constant="16" id="GL3-pr-WyZ"/>
                                     <constraint firstItem="jZh-h9-rrn" firstAttribute="top" secondItem="76z-3m-XXY" secondAttribute="bottom" id="GjP-1h-emf"/>
                                     <constraint firstAttribute="trailing" secondItem="76z-3m-XXY" secondAttribute="trailing" id="M8U-dF-rc2"/>
                                     <constraint firstItem="4gI-E6-Py7" firstAttribute="top" secondItem="JRF-wR-uwd" secondAttribute="bottom" id="Pdz-vA-RjD"/>
@@ -190,6 +193,7 @@
                     <size key="freeformSize" width="375" height="870"/>
                     <connections>
                         <outlet property="savedVidBtnHeightCon" destination="qrN-BG-3XH" id="nyQ-7U-HRI"/>
+                        <outlet property="savedVidCollectionView" destination="7GF-Bo-V3h" id="6Ml-Zd-Byl"/>
                         <outlet property="savedVidsViewHeightCon" destination="ep1-jR-VSU" id="cZ1-9z-fcZ"/>
                         <outlet property="tableView" destination="76z-3m-XXY" id="A9E-Gp-dUx"/>
                     </connections>
@@ -197,6 +201,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.0809595202399"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="AoZ-GC-22G">
+            <objects>
+                <viewController id="BIh-fE-oPj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9lX-E1-MD5"/>
+                        <viewControllerLayoutGuide type="bottom" id="oQp-xT-xWU"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="E4j-Tp-n0q">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VNQ-s4-6Ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2025" y="481"/>
         </scene>
     </scenes>
 </document>

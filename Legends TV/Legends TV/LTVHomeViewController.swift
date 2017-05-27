@@ -15,6 +15,8 @@ class LTVHomeTableCell : UITableViewCell {
 }
 
 class LTSavedVidCollectionCell : UICollectionViewCell {
+    
+    @IBOutlet var imgView: UIImageView!
 
 }
 
@@ -27,6 +29,7 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
     var moviesArray : [[String : Any]]?
     var picsArray : [UIImage]? = []
     
+    @IBOutlet var savedVidCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -43,7 +46,7 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
         let activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityView.center = self.view.center
         activityView.startAnimating()
-        self.view.addSubview(activityView)
+        self.tableView.addSubview(activityView)
         
         DispatchQueue.global().async {
             for viewing in self.moviesArray!{
@@ -54,22 +57,14 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
                 if let data = try? Data(contentsOf: url!) {
                     self.picsArray?.append(UIImage(data: data)!)
                 }
-//                for (_, element) in arr.enumerated() {
-//                    let mem = element
-//                    if mem.picFileString == nil {
-//                        continue
-//                    } else {
-//                        let url = URL(string: "\(DataHandler.kPhotoURL)\(mem.picFileString!)")
-//                        if let data = try? Data(contentsOf: url!) {
-//                            mem.img = UIImage(data: data)
-//                        }
-//                    }
-//                }
+
             }
-            DispatchQueue.main.async {
+            DispatchQueue.main.sync {
                 self.tableView.reloadData()
+                self.savedVidCollectionView.reloadData()
                 activityView.stopAnimating()
             }
+            
         }
 
     }
@@ -102,12 +97,13 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
 
 
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 3
+        return picsArray!.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SavedVidCell", for: indexPath) as! LTSavedVidCollectionCell
-        
+        cell.imgView.image = picsArray?[indexPath.row]
+
         return cell
     }
 
