@@ -40,6 +40,30 @@
 
   "movies": [
     {
+             
+        "movie": {
+             "content": {
+             "dateadded": "2017-04-03T04:00:00+00:00",
+             "videos": {
+             "video": {
+             "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/3db87d70-eb5b-47f2-bad5-8f3202e5c1a3/MJ_TheJourney_v3-VIMEO_HD.ism/manifest(format=m3u8-aapl)",
+             "quality": "FHD",
+             "videoType": "HLS"
+             }
+             },
+             "duration": "4531",
+             "captions": ""
+             },
+             "genres": "documentary",
+             "id": "michaeljacksonthejourney",
+             "longDescription": "Michael Jackson!!",
+             "releaseDate": "2015-01-01",
+             "shortDescription": "Michael Jackson!",
+             "thumbnail": "http://www.legendstv.com/RokuGraphics/Michael%20Jackson_1280x720.jpg",
+             "title": "Michael Jackson: The Journey"
+             }
+    },
+    {
       "movie": {
         "content": {
           "dateadded": "2017-04-03T04:00:00+00:00",
@@ -62,31 +86,7 @@
         "title": "Justin Timberlake: Man of the Hour"
       }
     },
-    {
-
-      "movie": {
-        "content": {
-          "dateadded": "2017-04-03T04:00:00+00:00",
-          "videos": {
-            "video": {
-              "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/3db87d70-eb5b-47f2-bad5-8f3202e5c1a3/MJ_TheJourney_v3-VIMEO_HD.ism/manifest(format=m3u8-aapl)",
-              "quality": "FHD",
-              "videoType": "HLS"
-            }
-          },
-          "duration": "4531",
-          "captions": ""
-        },
-        "genres": "documentary",
-        "id": "michaeljacksonthejourney",
-        "longDescription": "Michael Jackson!!",
-        "releaseDate": "2015-01-01",
-        "shortDescription": "Michael Jackson!",
-        "thumbnail": "http://www.legendstv.com/RokuGraphics/Michael%20Jackson_1280x720.jpg",
-        "title": "Michael Jackson: The Journey"
-      }
-    },
-    {
+   {
       "movie": {
         "content": {
           "dateadded": "2017-04-03T04:00:00+00:00",

@@ -29,6 +29,7 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
     var moviesArray : [[String : Any]]?
     var picsArray : [UIImage]? = []
     
+    @IBOutlet var savedVidButton: UIButton!
     @IBOutlet var savedVidCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()

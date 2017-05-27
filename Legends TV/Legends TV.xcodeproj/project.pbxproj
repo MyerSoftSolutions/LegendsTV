@@ -23,6 +23,9 @@
 		D9E39B8E1ED9D17400061EEA /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */; };
 		D9E39B8F1ED9D17400061EEA /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */; };
 		D9E39B901ED9D17400061EEA /* JSONHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */; };
+		D9E39B921EDA037700061EEA /* LTVViewingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B911EDA037700061EEA /* LTVViewingViewController.swift */; };
+		D9E39B931EDA037700061EEA /* LTVViewingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B911EDA037700061EEA /* LTVViewingViewController.swift */; };
+		D9E39B941EDA037700061EEA /* LTVViewingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B911EDA037700061EEA /* LTVViewingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,6 +62,7 @@
 		D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVHomeViewController.swift; sourceTree = "<group>"; };
 		D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "VideoFeedApril2017-2.json"; path = "../VideoFeedApril2017-2.json"; sourceTree = "<group>"; };
 		D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
+		D9E39B911EDA037700061EEA /* LTVViewingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVViewingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +115,7 @@
 			children = (
 				D904B16A1EC9F17E006525C1 /* AppDelegate.swift */,
 				D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */,
+				D9E39B911EDA037700061EEA /* LTVViewingViewController.swift */,
 				D904B16E1EC9F17E006525C1 /* Main.storyboard */,
 				D904B1741EC9F17E006525C1 /* Assets.xcassets */,
 				D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */,
@@ -280,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9E39B921EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 				D9E39B8E1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D904B16B1EC9F17E006525C1 /* AppDelegate.swift in Sources */,
@@ -294,6 +300,7 @@
 				D98145D01ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D9E39B8F1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */,
+				D9E39B931EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +311,7 @@
 				D98145D11ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D9E39B901ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */,
+				D9E39B941EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
