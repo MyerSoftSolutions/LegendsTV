@@ -214,47 +214,15 @@
             <point key="canvasLocation" x="2015.2" y="137.6311844077961"/>
         </scene>
         <!--Viewing View Controller-->
-        <scene sceneID="AoZ-GC-22G">
-            <objects>
-                <viewController id="BIh-fE-oPj" customClass="LTVViewingViewController" customModule="Legends_TV" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="9lX-E1-MD5"/>
-                        <viewControllerLayoutGuide type="bottom" id="oQp-xT-xWU"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="E4j-Tp-n0q">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="870"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" rowHeight="218" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NfD-8n-2l5">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="870"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.3499365482233503" green="0.3499365482233503" blue="0.3499365482233503" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <sections>
-                                    <tableViewSection id="GSo-Lb-EaY">
-                                        <cells/>
-                                    </tableViewSection>
-                                </sections>
-                            </tableView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-                    <size key="freeformSize" width="375" height="870"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="VNQ-s4-6Ij" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3079.1999999999998" y="137.6311844077961"/>
-        </scene>
-        <!--Table View Controller-->
         <scene sceneID="gJk-Vb-jKn">
             <objects>
-                <tableViewController id="jwB-fB-jFe" sceneMemberID="viewController">
+                <tableViewController id="jwB-fB-jFe" customClass="LTVViewingViewController" customModule="Legends_TV" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="18N-OB-3DR">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="229" id="kER-Uo-vSs">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="VideoPlayerCell" rowHeight="229" id="kER-Uo-vSs" userLabel="VideoPlayerCell" customClass="LTVVideoPlayerTableViewCell" customModule="Legends_TV" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="28" width="375" height="229"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kER-Uo-vSs" id="74I-tu-4Yd">
@@ -300,7 +268,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="158" id="8Pn-2i-LY9">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DescriptionCell" rowHeight="158" id="8Pn-2i-LY9" userLabel="DescriptionCell" customClass="LTVDescriptionTableViewCell" customModule="Legends_TV" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="257" width="375" height="158"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Pn-2i-LY9" id="dd0-0w-pBe">
@@ -366,7 +334,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="168" id="qO2-n1-wJJ">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="UpNextCell" rowHeight="168" id="qO2-n1-wJJ" userLabel="UpNextCollectionCell" customClass="LTVUpNextTableViewCell" customModule="Legends_TV" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="415" width="375" height="168"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qO2-n1-wJJ" id="NZc-zo-XJh">
@@ -453,7 +421,7 @@
                                     </constraints>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="r16-KL-WRM">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CopyrightCell" id="r16-KL-WRM" userLabel="CopyrightCell">
                                 <rect key="frame" x="0.0" y="583" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r16-KL-WRM" id="uZV-Zy-bee">
@@ -494,7 +462,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wg-LK-Hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4016.8000000000002" y="130.88455772113943"/>
+            <point key="canvasLocation" x="3158" y="46"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XwX-pL-KDX">
