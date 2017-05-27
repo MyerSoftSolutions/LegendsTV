@@ -23,9 +23,12 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     let jsonHandler = JSONHandler.defaultHandler
     @IBOutlet var savedVidBtnHeightCon: NSLayoutConstraint!
+    var moviesArray : [[String : Any]]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        print(jsonHandler.jsonFile!)
+        
+        moviesArray = jsonHandler.parseMovieArray()
 //        self.savedVidBtnHeightCon.constant = 0
 //        self.savedVidsViewHeightCon.constant = 0
 
@@ -45,12 +48,14 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
     //MARK: UITableView Datasource Methods
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
+        return moviesArray!.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "LTVHomeCell", for: indexPath) as! LTVHomeTableCell
         
+        let dict = moviesArray?[indexPath.row]
+        print(dict!)
         return cell
     }
     

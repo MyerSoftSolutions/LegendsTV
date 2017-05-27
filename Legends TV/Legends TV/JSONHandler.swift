@@ -12,7 +12,7 @@ final class JSONHandler {
     static let defaultHandler = JSONHandler()
     private static let filePath = "VideoFeedApril2017-2"
 
-    var jsonFile : [String : Any]?
+    private var jsonFile : [String : Any]?
     private init() {
         self.readJson()
     }
@@ -39,5 +39,13 @@ final class JSONHandler {
             print(error.localizedDescription)
         }
     }
+    
+    func parseMovieArray () -> [[String : Any]] {
+    
+        let arr : [[String : Any]] = jsonFile!["movies"] as! [[String : Any]]
+        
+        return arr
+    }
+    
 
 }
