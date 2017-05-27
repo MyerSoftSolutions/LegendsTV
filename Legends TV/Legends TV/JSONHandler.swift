@@ -24,7 +24,6 @@ final class JSONHandler {
                 let json = try JSONSerialization.jsonObject(with: data, options: [])
                 if let object = json as? [String: Any] {
                     // json is a dictionary
-                    print(object)
                     jsonFile = object
                 } else if let object = json as? [Any] {
                     // json is an array
