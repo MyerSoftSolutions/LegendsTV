@@ -14,6 +14,9 @@
 		D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */; };
 		D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B1821EC9F17E006525C1 /* Legends_TVTests.swift */; };
 		D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */; };
+		D974EB771EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D974EB761EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework */; };
+		D974EB781EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D974EB761EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework */; };
+		D974EB791EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D974EB761EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework */; };
 		D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */; };
 		D98145D01ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */; };
 		D98145D11ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */; };
@@ -68,6 +71,10 @@
 		D904B1891EC9F17E006525C1 /* Legends TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Legends TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legends_TVUITests.swift; sourceTree = "<group>"; };
 		D904B18F1EC9F17E006525C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D974EB761EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "JWPlayer-iOS-SDK.framework"; sourceTree = "<group>"; };
+		D974EB7A1EDB62B800ADA6B3 /* Legends TV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Legends TV-Bridging-Header.h"; sourceTree = "<group>"; };
+		D974EB7B1EDB62B800ADA6B3 /* Legends TVTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Legends TVTests-Bridging-Header.h"; sourceTree = "<group>"; };
+		D974EB7C1EDB62B800ADA6B3 /* Legends TVUITests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Legends TVUITests-Bridging-Header.h"; sourceTree = "<group>"; };
 		D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVHomeViewController.swift; sourceTree = "<group>"; };
 		D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = "VideoFeedApril2017-2.json"; path = "../VideoFeedApril2017-2.json"; sourceTree = "<group>"; };
 		D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JSONHandler.swift; sourceTree = "<group>"; };
@@ -82,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D974EB771EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D974EB781EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D974EB791EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,6 +119,7 @@
 				D904B1811EC9F17E006525C1 /* Legends TVTests */,
 				D904B18C1EC9F17E006525C1 /* Legends TVUITests */,
 				D904B1681EC9F17E006525C1 /* Products */,
+				D974EB761EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework */,
 			);
 			sourceTree = "<group>";
 		};
@@ -138,6 +149,9 @@
 				D904B1711EC9F17E006525C1 /* Legends_TV.xcdatamodeld */,
 				D98145D21ED0C61000ED1C12 /* VideoFeedApril2017-2.json */,
 				D9E39B8D1ED9D17400061EEA /* JSONHandler.swift */,
+				D974EB7A1EDB62B800ADA6B3 /* Legends TV-Bridging-Header.h */,
+				D974EB7B1EDB62B800ADA6B3 /* Legends TVTests-Bridging-Header.h */,
+				D974EB7C1EDB62B800ADA6B3 /* Legends TVUITests-Bridging-Header.h */,
 			);
 			path = "Legends TV";
 			sourceTree = "<group>";
@@ -229,17 +243,20 @@
 					D904B1661EC9F17E006525C1 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X557HAPU2P;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 					};
 					D904B17D1EC9F17E006525C1 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X557HAPU2P;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D904B1661EC9F17E006525C1;
 					};
 					D904B1881EC9F17E006525C1 = {
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = X557HAPU2P;
+						LastSwiftMigration = 0830;
 						ProvisioningStyle = Automatic;
 						TestTargetID = D904B1661EC9F17E006525C1;
 					};
@@ -418,6 +435,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -462,6 +480,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "-all_load";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -473,11 +492,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X557HAPU2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Legends TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TV-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -486,11 +513,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X557HAPU2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Legends TV/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TV";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TV-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -500,11 +534,18 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X557HAPU2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Legends TVTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TVTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TVTests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Legends TV.app/Legends TV";
 			};
@@ -515,11 +556,17 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X557HAPU2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Legends TVTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TVTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TVTests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Legends TV.app/Legends TV";
 			};
@@ -529,11 +576,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X557HAPU2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Legends TVUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TVUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TVUITests-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Legends TV";
 			};
@@ -543,11 +597,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = X557HAPU2P;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Legends TVUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.legendsMedia.legendstv.Legends-TVUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TVUITests-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 				TEST_TARGET_NAME = "Legends TV";
 			};
