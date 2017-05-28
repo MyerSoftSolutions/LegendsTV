@@ -297,7 +297,7 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="10"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-o3-Wv4">
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-o3-Wv4">
                                                     <rect key="frame" x="8" y="58" width="355" height="69"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -337,6 +337,11 @@
                                         <constraint firstItem="4px-ya-M6u" firstAttribute="top" secondItem="dd0-0w-pBe" secondAttribute="top" id="as3-np-ce4"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="descriptionTextView" destination="HU4-o3-Wv4" id="ltK-04-B5b"/>
+                                    <outlet property="durationLabel" destination="aRG-Qf-5OR" id="mhQ-Wm-wq8"/>
+                                    <outlet property="titleLabel" destination="aFN-cD-KYA" id="OGx-HV-lMj"/>
+                                </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UpNextCell" rowHeight="168" id="qO2-n1-wJJ" userLabel="UpNextCollectionCell" customClass="LTVUpNextTableViewCell" customModule="Legends_TV" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="415" width="375" height="168"/>

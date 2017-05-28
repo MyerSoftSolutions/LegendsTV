@@ -51,9 +51,7 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         DispatchQueue.global().async {
             for viewing in self.moviesArray!{
-                print(viewing)
                 let dict = viewing["movie"] as AnyObject
-                print(dict)
                
                 //get "thumbnail key string"
                 let url = URL(string: "\(dict["thumbnail"] as! String)")

@@ -16,6 +16,9 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
     @IBOutlet var videoPlayerView: UIView!
     var viewingDict : [String : AnyObject]?
     var videoPlayer : JWPlayerController?
+    var jwConfig : JWConfig?
+    var urlString : String?
+    var thumbnailString : String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,6 +31,15 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         print(viewingDict!)
+        
+        let dict = viewingDict?["content"] as! [String : Any]
+        let dict2 = dict["videos"] as! [String : Any]
+        let dict3 = dict2["video"] as! [String : Any]
+        
+        thumbnailString = viewingDict?["thumbnail"] as? String
+        
+        urlString = dict3["url"] as? String
+        tableView.reloadData()
     }
     //MARK: TableViewDelegate Methods
     
@@ -60,17 +72,17 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: "VideoPlayerCell", for: indexPath) as! LTVVideoPlayerTableViewCell
             
-//            let config = JWConfig.init(contentURL: <#T##String!#>)
-//            config.image = posterImage;
-//            config.size = CGSizeMake(self.view.frame.size.width, self.view.frame.size.width);
-//            config.autostart = YES;
-//            config.repeat = YES;
-//            
-//            self.player = [[JWPlayerController alloc]initWithConfig:config];
-//            self.player.forceLandscapeOnFullScreen = YES;
-//            self.player.forceFullScreenOnLandscape = YES;
-//            self.player.view.center = self.view.center;
-//            self.player.delegate = self;
+            jwConfig = JWConfig.init(contentURL: urlString)
+            jwConfig?.image = thumbnailString
+            jwConfig?.size = cell.videoPlayerView.frame.size
+            jwConfig?.autostart = true
+            jwConfig?.repeat = false
+            
+            videoPlayer = JWPlayerController.init(config: jwConfig, delegate: self)
+            videoPlayer?.forceLandscapeOnFullScreen = true
+            videoPlayer?.forceFullScreenOnLandscape = true
+            videoPlayer?.view.center = cell.videoPlayerView.center
+            cell.videoPlayerView.addSubview((videoPlayer?.view)!)
 
             
             return cell
