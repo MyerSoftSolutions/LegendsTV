@@ -51,7 +51,7 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
         
         DispatchQueue.global().async {
             for viewing in self.moviesArray!{
-                let dict = viewing["movie"] as! AnyObject
+                let dict = viewing["movie"] as AnyObject
                
                 //get "thumbnail key string"
                 let url = URL(string: "\(dict["thumbnail"] as! String)")
@@ -94,6 +94,21 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
         return cell
     }
     
+    //MARK: PREPAREFORSEGUE
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "ViewingSegue" {
+            let vc = segue.destination as! LTVViewingViewController
+            let cell = sender as! LTVHomeTableCell
+            let idxPath = tableView.indexPath(for: cell)
+            let dict = moviesArray?[(idxPath?.row)!] as AnyObject
+            vc.viewingDict = dict["movie"] as! [String : AnyObject]?
+        
+            
+            
+            
+        }
+    }
+    
     //MARK: UICollectionView Datasource Methods
 
 
@@ -107,5 +122,7 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
 
         return cell
     }
+    
+    
 
 }

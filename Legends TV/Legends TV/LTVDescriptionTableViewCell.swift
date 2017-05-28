@@ -10,6 +10,9 @@ import UIKit
 
 class LTVDescriptionTableViewCell: UITableViewCell {
 
+    @IBOutlet var titleLabel: UILabel!
+    @IBOutlet var durationLabel: UILabel!
+    @IBOutlet var descriptionTextView: UITextView!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

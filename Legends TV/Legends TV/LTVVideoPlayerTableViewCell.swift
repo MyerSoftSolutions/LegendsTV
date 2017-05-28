@@ -10,6 +10,8 @@ import UIKit
 
 class LTVVideoPlayerTableViewCell: UITableViewCell {
 
+    @IBOutlet var videoPlayerView: UIView!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
