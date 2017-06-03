@@ -19,6 +19,8 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
     var jwConfig : JWConfig?
     var urlString : String?
     var thumbnailString : String?
+    var durationString : String?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,10 +35,10 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
         print(viewingDict!)
         
         let dict = viewingDict?["content"] as! [String : Any]
+        durationString = "\(Int(Int((dict["duration"] as? String)!)! / 60)) min "
         let dict2 = dict["videos"] as! [String : Any]
         let dict3 = dict2["video"] as! [String : Any]
         
-        thumbnailString = viewingDict?["thumbnail"] as? String
         
         urlString = dict3["url"] as? String
         tableView.reloadData()
@@ -88,6 +90,10 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionCell", for: indexPath) as! LTVDescriptionTableViewCell
+            
+            cell.titleLabel.text = viewingDict?["title"] as? String
+            cell.durationLabel.text = durationString
+            cell.descriptionTextView.text = viewingDict?["longDescription"] as? String
             
             return cell
         case 2:
