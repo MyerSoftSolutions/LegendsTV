@@ -20,19 +20,22 @@ class LTSavedVidCollectionCell : UICollectionViewCell {
 
 }
 
-class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewDataSource, UICollectionViewDataSource, UICollectionViewDelegate {
-    @IBOutlet var savedVidsViewHeightCon: NSLayoutConstraint!
+class LTVHomeViewController: UITableViewController/*UICollectionViewDataSource, UICollectionViewDelegate*/ {
+//    @IBOutlet var savedVidsViewHeightCon: NSLayoutConstraint!
 
-    @IBOutlet var tableView: UITableView!
+//    @IBOutlet var tableView: UITableView!
     let jsonHandler = JSONHandler.defaultHandler
-    @IBOutlet var savedVidBtnHeightCon: NSLayoutConstraint!
+//    @IBOutlet var savedVidBtnHeightCon: NSLayoutConstraint!
     var moviesArray : [[String : Any]]?
     var picsArray : [UIImage]? = []
     
-    @IBOutlet var savedVidButton: UIButton!
-    @IBOutlet var savedVidCollectionView: UICollectionView!
+//    @IBOutlet var savedVidButton: UIButton!
+//    @IBOutlet var savedVidCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        tableView.separatorStyle = .none
+        tableView.estimatedRowHeight = UITableViewAutomaticDimension
         
         moviesArray = jsonHandler.parseMovieArray()
         getData()
@@ -47,7 +50,7 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
         let activityView = UIActivityIndicatorView(activityIndicatorStyle: .gray)
         activityView.center = self.view.center
         activityView.startAnimating()
-        self.tableView.addSubview(activityView)
+        tableView.addSubview(activityView)
         
         DispatchQueue.global().async {
             for viewing in self.moviesArray!{
@@ -62,7 +65,7 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
             }
             DispatchQueue.main.sync {
                 self.tableView.reloadData()
-                self.savedVidCollectionView.reloadData()
+//                self.savedVidCollectionView.reloadData()
                 activityView.stopAnimating()
             }
             
@@ -77,21 +80,42 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //MARK: UITableView Datasource Methods
     
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return picsArray!.count
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if picsArray!.count > 0 {
+            return picsArray!.count + 1
+        } else {
+            return 0
+        }
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "LTVHomeCell", for: indexPath) as! LTVHomeTableCell
-        
-        cell.imgView.image = picsArray?[indexPath.row]
-
-        return cell
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row != picsArray!.count {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "LTVHomeCell", for: indexPath) as! LTVHomeTableCell
+            cell.imgView.image = picsArray?[indexPath.row]
+            
+            return cell
+            
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "CopyrightCell", for: indexPath)
+            
+            return cell
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        if indexPath.row == picsArray?.count {
+            return 53
+        } else {
+            return 180
+        }
+    }
+    
+    override func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
+        return UITableViewAutomaticDimension
     }
     
     //MARK: PREPAREFORSEGUE
@@ -102,8 +126,6 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
             let idxPath = tableView.indexPath(for: cell)
             let dict = moviesArray?[(idxPath?.row)!] as AnyObject
             vc.viewingDict = dict["movie"] as! [String : AnyObject]?
-        
-            
             
             
         }
@@ -112,16 +134,16 @@ class LTVHomeViewController: UIViewController, UITableViewDelegate, UITableViewD
     //MARK: UICollectionView Datasource Methods
 
 
-    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return picsArray!.count
-    }
-    
-    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SavedVidCell", for: indexPath) as! LTSavedVidCollectionCell
-        cell.imgView.image = picsArray?[indexPath.row]
-
-        return cell
-    }
+//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+//        return picsArray!.count
+//    }
+//    
+//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SavedVidCell", for: indexPath) as! LTSavedVidCollectionCell
+//        cell.imgView.image = picsArray?[indexPath.row]
+//
+//        return cell
+//    }
     
     
 

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="im7-jO-9H6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="iMh-UN-OZe">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Home View Controller-->
+        <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LTVHomeViewController" customModule="Legends_TV" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -55,7 +55,6 @@
                                                 <connections>
                                                     <outlet property="imgBottomCon" destination="QbJ-a8-TZI" id="lEd-Rj-CVY"/>
                                                     <outlet property="imgView" destination="sHJ-np-0NA" id="Vch-Rj-Nyo"/>
-                                                    <segue destination="jwB-fB-jFe" kind="show" identifier="ViewingSegue" id="UBI-uM-bqr"/>
                                                 </connections>
                                             </tableViewCell>
                                         </prototypes>
@@ -219,7 +218,7 @@
             <objects>
                 <tableViewController id="jwB-fB-jFe" customClass="LTVViewingViewController" customModule="Legends_TV" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="18N-OB-3DR">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="870"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
@@ -471,7 +470,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Wg-LK-Hy9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3095.1999999999998" y="137.6311844077961"/>
+            <point key="canvasLocation" x="3900" y="898"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XwX-pL-KDX">
@@ -492,6 +491,91 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZGy-ws-Bv5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1076" y="138.0809595202399"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="p1e-gw-gIn">
+            <objects>
+                <tableViewController storyboardIdentifier="LTVHomeViewController" id="aFN-MX-bQ3" customClass="LTVHomeViewController" customModule="Legends_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="180" sectionHeaderHeight="28" sectionFooterHeight="28" id="Tbh-vT-hYF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="LTVHomeCell" rowHeight="180" id="ssH-lx-fyC" customClass="LTVHomeTableCell" customModule="Legends_TV" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="28" width="375" height="180"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ssH-lx-fyC" id="pDf-dj-Qgs">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="180"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="1Br-te-GlZ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="170"/>
+                                        </imageView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailing" secondItem="1Br-te-GlZ" secondAttribute="trailing" id="0sI-Oh-QBv"/>
+                                        <constraint firstItem="1Br-te-GlZ" firstAttribute="top" secondItem="pDf-dj-Qgs" secondAttribute="top" id="Wqx-gM-UCQ"/>
+                                        <constraint firstItem="1Br-te-GlZ" firstAttribute="leading" secondItem="pDf-dj-Qgs" secondAttribute="leading" id="hJ2-sv-YZE"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="1Br-te-GlZ" secondAttribute="bottom" constant="2" id="zFb-Gk-s1C"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <color key="backgroundColor" red="0.94509803920000002" green="0.95686274510000002" blue="0.92941176469999998" alpha="0.80709546229999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <outlet property="imgBottomCon" destination="zFb-Gk-s1C" id="3DO-Vz-mUp"/>
+                                    <outlet property="imgView" destination="1Br-te-GlZ" id="WCO-rU-C5u"/>
+                                    <segue destination="jwB-fB-jFe" kind="show" identifier="ViewingSegue" id="DoB-U9-uqW"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CopyrightCell" rowHeight="53" id="kBv-Cc-VdW">
+                                <rect key="frame" x="0.0" y="208" width="375" height="53"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="kBv-Cc-VdW" id="xmK-bo-59H">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="53"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="© 2017 Legends Media Group, Inc." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5EV-bh-32u">
+                                            <rect key="frame" x="64" y="16" width="247" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="5EV-bh-32u" firstAttribute="centerX" secondItem="xmK-bo-59H" secondAttribute="centerX" id="bmD-bf-Gjo"/>
+                                        <constraint firstItem="5EV-bh-32u" firstAttribute="centerY" secondItem="xmK-bo-59H" secondAttribute="centerY" id="ndT-b6-uS5"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="aFN-MX-bQ3" id="OPK-10-Zqz"/>
+                            <outlet property="delegate" destination="aFN-MX-bQ3" id="ehq-sV-j3b"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="ioG-XD-U7i"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="6OR-RQ-sm2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2679.1999999999998" y="933.28335832083962"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="1bj-zF-EJw">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iMh-UN-OZe" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="Iag-Cr-lSo">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="aFN-MX-bQ3" kind="relationship" relationship="rootViewController" id="Gtc-bh-OqU"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FS4-FI-Glb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1740" y="932.38380809595208"/>
         </scene>
     </scenes>
 </document>
