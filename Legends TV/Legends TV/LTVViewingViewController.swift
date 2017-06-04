@@ -10,7 +10,7 @@ import UIKit
 let videoFile = "http://playertest.longtailvideo.com/adaptive/oceans/oceans.m3u8"
 //#define posterImage @"http://d3el35u4qe4frz.cloudfront.net/bkaovAYt-480.jpg"
 
-class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
+class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
    
     @IBOutlet var videoPlayerView: UIView!
@@ -20,13 +20,19 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
     var urlString : String?
     var thumbnailString : String?
     var durationString : String?
+    
+    var moviesArray : [[String : Any]]?
+    var picsArray : [UIImage]? = []
+    
+    var upNextCell : LTVUpNextTableViewCell?
+
 
     
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = UITableViewAutomaticDimension
         tableView.separatorStyle = .none
-        
+        self.navigationController?.navigationItem.leftBarButtonItem = nil
         // Do any additional setup after loading the view.
     }
 
@@ -54,13 +60,13 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
         case 0:
             return 229
         case 1:
-            return 158
+            return 148
         case 2:
             return 168
         case 3:
-            return 44
+            return 53
         default:
-            return 44
+            return 53
         }
 
     }
@@ -98,6 +104,7 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: "UpNextCell", for: indexPath) as! LTVUpNextTableViewCell
+            cell.collectionView.reloadData()
             
             return cell
         case 3:
@@ -115,6 +122,35 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    //MARK: UICollectionView Datasource Methods
+    
+    
+        func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+            return picsArray!.count
+        }
+    
+        func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SavedVidCell", for: indexPath) as! LTSavedVidCollectionCell
+            cell.imgView.image = picsArray?[indexPath.row]
+    
+            return cell
+        }
+
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let dict = moviesArray?[(indexPath.row)] as AnyObject
+        viewingDict = dict["movie"] as! [String : AnyObject]?
+        
+        let contentDict = viewingDict?["content"] as! [String : Any]
+        durationString = "\(Int(Int((contentDict["duration"] as? String)!)! / 60)) min "
+        let dict2 = contentDict["videos"] as! [String : Any]
+        let dict3 = dict2["video"] as! [String : Any]
+        
+        
+        urlString = dict3["url"] as? String
+
+        tableView.reloadData()
     }
 
 }

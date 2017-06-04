@@ -126,6 +126,8 @@ class LTVHomeViewController: UITableViewController/*UICollectionViewDataSource, 
             let idxPath = tableView.indexPath(for: cell)
             let dict = moviesArray?[(idxPath?.row)!] as AnyObject
             vc.viewingDict = dict["movie"] as! [String : AnyObject]?
+            vc.moviesArray = moviesArray
+            vc.picsArray = picsArray
             
             
         }
