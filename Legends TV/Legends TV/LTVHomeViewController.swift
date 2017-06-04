@@ -33,7 +33,8 @@ class LTVHomeViewController: UITableViewController/*UICollectionViewDataSource, 
 //    @IBOutlet var savedVidCollectionView: UICollectionView!
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.addNavigationIcon()
+
         tableView.separatorStyle = .none
         tableView.estimatedRowHeight = UITableViewAutomaticDimension
         

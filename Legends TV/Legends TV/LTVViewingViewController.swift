@@ -10,6 +10,29 @@ import UIKit
 let videoFile = "http://playertest.longtailvideo.com/adaptive/oceans/oceans.m3u8"
 //#define posterImage @"http://d3el35u4qe4frz.cloudfront.net/bkaovAYt-480.jpg"
 
+extension UITableViewController {
+    func addNavigationIcon(){
+        let logo = UIImage(named: "Icon-83.5")
+        let imageView = UIImageView(image:logo)
+        imageView.frame = CGRect(x: 0, y: 0, width: 50, height: 24)
+        
+//        let button =  UIButton(type: .custom)
+//        button.setImage(imageView.image, for: .normal)
+//        button.frame = CGRect(x: 0, y: 0, width: 50, height: 24)
+//        button.addTarget(self, action: #selector(UITableViewController.homeNavigation), for: .touchUpInside)
+        self.navigationItem.titleView = imageView
+        
+    }
+    
+    func homeNavigation () {
+//        let vcArray = self.navigationController
+//        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//        let mainViewController = storyboard.instantiateInitialViewController()
+//        vcArray?.pushViewController(mainViewController!, animated: true)
+    }
+
+}
+
 class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
     
    
@@ -20,6 +43,8 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
     var urlString : String?
     var thumbnailString : String?
     var durationString : String?
+    var backBtn : UIBarButtonItem?
+
     
     var moviesArray : [[String : Any]]?
     var picsArray : [UIImage]? = []
@@ -32,13 +57,22 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         super.viewDidLoad()
         tableView.estimatedRowHeight = UITableViewAutomaticDimension
         tableView.separatorStyle = .none
-        self.navigationController?.navigationItem.leftBarButtonItem = nil
+        self.createCustomBackButton("< ")
+        self.addNavigationIcon()
         // Do any additional setup after loading the view.
     }
 
+    func createCustomBackButton(_ btnTitle: String) {
+        backBtn = UIBarButtonItem(title: btnTitle, style: UIBarButtonItemStyle.done, target: self, action: #selector(LTVViewingViewController.navigationBackButtonClicked))
+        self.navigationItem.leftBarButtonItem = backBtn
+    }
+
+    func navigationBackButtonClicked() {
+        navigationController?.popViewController(animated: true)
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        print(viewingDict!)
         
         let dict = viewingDict?["content"] as! [String : Any]
         durationString = "\(Int(Int((dict["duration"] as? String)!)! / 60)) min "
