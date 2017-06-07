@@ -18,6 +18,8 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>JWPlayerKey</key>
+	<string>amg2B1iK0YyGr6kU2O2+VAfx3X5XbooVm7NIRA==</string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
 	<key>NSAppTransportSecurity</key>
@@ -29,8 +31,6 @@
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
 	<string>Main</string>
-	<key>JWPlayerKey</key>
-	<string>amg2B1iK0YyGr6kU2O2+VAfx3X5XbooVm7NIRA==</string>
 	<key>UIRequiredDeviceCapabilities</key>
 	<array>
 		<string>armv7</string>

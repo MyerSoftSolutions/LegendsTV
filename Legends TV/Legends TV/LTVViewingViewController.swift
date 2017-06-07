@@ -12,7 +12,7 @@ let videoFile = "http://playertest.longtailvideo.com/adaptive/oceans/oceans.m3u8
 
 extension UITableViewController {
     func addNavigationIcon(){
-        let logo = UIImage(named: "Icon-83.5")
+        let logo = UIImage(named: "Icon-60")
         let imageView = UIImageView(image:logo)
         imageView.frame = CGRect(x: 0, y: 0, width: 50, height: 24)
         
