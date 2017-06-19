@@ -95,7 +95,7 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         case 0:
             return 229
         case 1:
-            return 148
+            return 233
         case 2:
             return 168
         case 3:

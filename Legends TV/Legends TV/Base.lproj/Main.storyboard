@@ -7,7 +7,6 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
-        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -241,16 +240,7 @@
                                             <color key="backgroundColor" red="0.12700269670050757" green="0.12700269670050757" blue="0.12700269670050757" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             <color key="barTintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                                             <items>
-                                                <navigationItem id="ghM-hu-jgM">
-                                                    <rightBarButtonItems>
-                                                        <barButtonItem systemItem="action" id="WEH-F7-CYf">
-                                                            <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                        </barButtonItem>
-                                                        <barButtonItem systemItem="organize" id="CMW-D2-sYE">
-                                                            <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                        </barButtonItem>
-                                                    </rightBarButtonItems>
-                                                </navigationItem>
+                                                <navigationItem id="ghM-hu-jgM"/>
                                             </items>
                                         </navigationBar>
                                     </subviews>
@@ -294,11 +284,8 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-o3-Wv4">
-                                                    <rect key="frame" x="8" y="58" width="355" height="69"/>
+                                                    <rect key="frame" x="8" y="58" width="355" height="80"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="69" id="44G-Ra-tEw"/>
-                                                    </constraints>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -309,7 +296,7 @@
                                                 <constraint firstItem="HU4-o3-Wv4" firstAttribute="leading" secondItem="4px-ya-M6u" secondAttribute="leading" constant="8" id="0q6-6u-fsJ"/>
                                                 <constraint firstItem="aFN-cD-KYA" firstAttribute="leading" secondItem="4px-ya-M6u" secondAttribute="leading" constant="11" id="2Yu-Re-7Ta"/>
                                                 <constraint firstItem="aFN-cD-KYA" firstAttribute="top" secondItem="4px-ya-M6u" secondAttribute="top" constant="8" id="5ia-kq-Rvf"/>
-                                                <constraint firstAttribute="bottom" secondItem="HU4-o3-Wv4" secondAttribute="bottom" constant="31" id="BCm-t1-aYB"/>
+                                                <constraint firstAttribute="bottom" secondItem="HU4-o3-Wv4" secondAttribute="bottom" constant="20" id="BCm-t1-aYB"/>
                                                 <constraint firstAttribute="trailing" secondItem="aFN-cD-KYA" secondAttribute="trailing" constant="12" id="UzX-M7-EEz"/>
                                                 <constraint firstItem="aRG-Qf-5OR" firstAttribute="top" secondItem="aFN-cD-KYA" secondAttribute="bottom" constant="8" id="cyN-S1-ihN"/>
                                                 <constraint firstItem="aRG-Qf-5OR" firstAttribute="leading" secondItem="aFN-cD-KYA" secondAttribute="leading" id="lxS-z6-9nT"/>
@@ -321,6 +308,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="4px-ya-M6u" firstAttribute="leading" secondItem="dd0-0w-pBe" secondAttribute="leading" id="9ks-DE-bkj"/>
+                                        <constraint firstAttribute="bottom" secondItem="4px-ya-M6u" secondAttribute="bottom" id="Hsa-YA-zrW"/>
                                         <constraint firstAttribute="trailing" secondItem="4px-ya-M6u" secondAttribute="trailing" id="SXi-H6-yoi"/>
                                         <constraint firstItem="4px-ya-M6u" firstAttribute="top" secondItem="dd0-0w-pBe" secondAttribute="top" id="as3-np-ce4"/>
                                     </constraints>
