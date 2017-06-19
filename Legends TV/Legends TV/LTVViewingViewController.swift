@@ -12,9 +12,10 @@ let videoFile = "http://playertest.longtailvideo.com/adaptive/oceans/oceans.m3u8
 
 extension UITableViewController {
     func addNavigationIcon(){
-        let logo = UIImage(named: "Icon-60")
+        let logo = UIImage(named: "iTunesArtwork")
         let imageView = UIImageView(image:logo)
-        imageView.frame = CGRect(x: 0, y: 0, width: 50, height: 24)
+        imageView.frame = CGRect(x: 0, y: 0, width: 50, height: 44)
+        imageView.contentMode = .scaleAspectFit
         
 //        let button =  UIButton(type: .custom)
 //        button.setImage(imageView.image, for: .normal)
