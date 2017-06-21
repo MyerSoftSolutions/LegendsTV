@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '10.0'
+
+target 'Legends TV' do
+  pod 'SpotX-SDK'
+  use_frameworks!
+
+  # Pods for Legends TV
+
+  target 'Legends TVTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'Legends TVUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 let videoFile = "http://playertest.longtailvideo.com/adaptive/oceans/oceans.m3u8"
 //#define posterImage @"http://d3el35u4qe4frz.cloudfront.net/bkaovAYt-480.jpg"
 
@@ -127,7 +128,6 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
             videoPlayer?.view.center = cell.videoPlayerView.center
             cell.videoPlayerView.addSubview((videoPlayer?.view)!)
 
-            
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: "DescriptionCell", for: indexPath) as! LTVDescriptionTableViewCell
@@ -156,11 +156,9 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     //MARK: UICollectionView Datasource Methods
-    
     
         func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
             return picsArray!.count

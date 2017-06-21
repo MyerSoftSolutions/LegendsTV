@@ -1,0 +1,216 @@
+{
+  "providerName": "Legends TV",
+  "lastUpdated": "2017-04-07T10:00:00+00:00",
+  "language": "en",
+  "categories": [
+    {
+     
+        "name": "Featured",
+        "order": "manual",
+        "playlistName": "featured content"
+     
+    },
+    {
+     
+        "name": "Recently Added",
+        "order": "manual",
+        "playlistName": "recently added"
+     
+    }
+  ],
+
+  "playlists": [
+    {
+     
+        "name": "featured content",
+        "itemIds": [
+          "justintimberlakemanofthehour",
+          "michaeljacksonthejourney", 
+          "mileycyrusuleashed"
+        ]
+     
+    },
+    {
+      "itemIds": [ "djchuckoriginalcore", "ferryCorstenWKND", "michaeljacksonthejourney", "justinbieberlimitless", "justintimberlakemanofthehour", "mileycyrusuleashed", "wu-tang_saga" ],
+      "name": "recently added"
+    }
+  ],
+
+  "movies": [
+    {
+
+      "content": {
+        "dateAdded": "2017-04-03T04:00:00+00:00",
+        "duration": 3177,
+        "videos": [
+          {
+            "url": "https://legendstvmediaservice.streaming.mediaservices.windows.net/b575312d-3e4e-4cc1-83d2-25d8c3ca3b1a/JUSTIN_TIMBERLAKE-Feature.ism/manifest",
+            "quality": "FHD",
+            "videoType": "SMOOTH"
+
+          }
+        ]
+      },
+        "genres": ["documentary"],
+        "id": "justintimberlakemanofthehour",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Justin Timberlake!",
+        "longDescription": "From the musical influences of Memphis, TN, Justin Timberlake has become a renowned actor, businessman, and solo act, working with titans Pharrell, Madonna, Timbaland and more.",
+        "thumbnail": "https://www.legendstv.com/RokuGraphics/Justin%20Timberlake_1280x720.jpg",
+        "title": "Justin Timberlake: Man of the Hour",
+        "adBreaks":["00:00:00","00:08:55", "00:20:01", "00:31:48", "00:41:48", "00:46:53"]
+     
+    },
+    {
+        
+    
+        "content": {
+          "dateAdded": "2017-04-03T04:00:00+00:00",
+          "videos": [
+            {
+        
+              "url": "https://legendstvmediaservice.streaming.mediaservices.windows.net/c4b122ce-f473-47cc-a470-26cc54476e14/MJ_TheJourney_v3-VIMEO_HD.ism/manifest",
+              "quality": "FHD",
+              "videoType": "SMOOTH"
+           
+          }
+          ],
+          "duration": 4531
+        },
+        "genres": ["documentary"],
+        "id": "michaeljacksonthejourney",
+        "longDescription": "Explore Michael Jackson's massive career success, and his lasting influence on pop culture through interviews with Berry Gordy, authors, and clips from his most popular music videos.",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Michael Jackson!",
+        "thumbnail": "https://www.legendstv.com/RokuGraphics/Michael%20Jackson_1280x720.jpg",
+        "title": "Michael Jackson: The Journey",
+        "adBreaks":["00:00:00","00:05:58", "00:17:55", "00:30:06", "00:46:39", "00:51:48", "01:07:39"]
+
+    },
+    {
+      
+        "content": {
+          "dateAdded": "2017-04-03T04:00:00+00:00",
+          "videos": [
+            {
+          
+              "url": "https://legendstvmediaservice.streaming.mediaservices.windows.net/e56c3fc1-215f-4474-ab1f-bab437ab4786/ODM_000406_EDM_24_Live_Dirty_Dutch_Back_to_the_Original_Core_ENG_HD24.ism/manifest",
+              "quality": "FHD",
+              "videoType": "SMOOTH"
+        
+          }
+          ],
+          "duration": 1917
+        },
+      "genres": ["documentary"],
+        "id": "djchuckoriginalcore",
+        "releaseDate": "2014-01-01",
+        "shortDescription": "Back to the Original Core!",
+        "longDescription": "DJ Chuckie's Dirty Dutch EDM movement returns to the Heineken Music Hall, for a massive celebration concert.",
+        "thumbnail": "https://www.legendstv.com/RokuGraphics/Dj%20Chuckie%20Final.png",
+        "title": "DJ Chuckie: Back to the Original Core",
+        "adBreaks":["00:00:00","00:03:24", "00:12:06", "00:21:41"]
+     
+    },
+    {
+    
+        "content": {
+          "dateAdded": "2017-04-03T04:00:00+00:00",
+          "videos":[ {
+           
+              "url": "https://legendstvmediaservice.streaming.mediaservices.windows.net/48526130-0a93-4b21-9af4-d40c9a9cbe9c/JUSTIN_BIEBER_LIMITLESS-Feature.ism/manifest",
+              "quality": "FHD",
+              "videoType": "SMOOTH"
+          
+          }
+          ],
+          "duration": 3856
+        },
+"genres": ["documentary"],
+        "id": "justinbieberlimitless",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Justin Bieber!",
+        "longDescription": "Justin Bieber was once just a kid showcasing his natural talents on YouTube. After teaming up with Usher, and Scooter Braun, he's become an international pop star.",
+        "thumbnail": "https://www.legendstv.com/RokuGraphics/Justin%20Bieber%20Limitless_Legends_1280x720.jpg",
+        "title": "Justin Bieber: Limitless",
+        "adBreaks":["00:00:00","00:05:12", "00:18:39", "00:25:35", "00:36:20", "00:46:01", "00:56:58"]
+     
+    },
+    {
+     
+        "content": {
+          "dateAdded": "2017-04-03T04:00:00+00:00",
+          "videos": [
+            {
+    
+              "url": "https://legendstvmediaservice.streaming.mediaservices.windows.net/cd2d9793-7ed2-4f51-9e76-50084f456b44/MILEY_CYRUS_UNLEASHED-Feature.ism/manifest",
+              "quality": "FHD",
+              "videoType": "SMOOTH"
+           
+          }
+          ],
+          "duration": 3618
+        },
+        "genres": ["documentary"],
+        "id": "mileycyrusuleashed",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Miley Cyrus!",
+        "longDescription": "Her iconic music videos, Billy Ray Cyrus, Paul McCartney and others shed light on Miley Cyrus's transformation from her days as a child star, into today's modern pop phenomenon.",
+        "thumbnail": "https://www.legendstv.com/RokuGraphics/Miley%20Cyrus_1280x720.jpg",
+        "title": "Miley Cyrus Unleashed",
+        "adBreaks":["00:00:00","00:05:37", "00:17:19", "00:26:40", "00:35:33", "00:48:41"]
+     
+    },
+    {
+      
+        "content": {
+          "captions": "",
+         
+          "dateAdded": "2017-04-03T04:00:00+00:00",
+          "duration": 4522,
+          "videos": [{
+         
+              "url": "https://legendstvmediaservice.streaming.mediaservices.windows.net/9d1e1e9a-8aff-4182-8572-7d02062f74f6/ODM_001008_Ferry_Corsten_WKNDR_A_Year_in_the_Life_of_2013_ENG_HDR24.ism/manifest",
+              "quality": "FHD",
+              "videoType": "SMOOTH"
+            }
+            ]
+          
+        },
+        "genres":[ "documentary"],
+        "id": "ferryCorstenWKND",
+        "releaseDate": "2015-01-01",
+        "shortDescription": "Ferry Corsten!",
+        "longDescription": "Travel the globe, one WKND at a time, with EDM sensation Ferry Corsten, as he tours, hits the studio, and works magic on the stage.",
+        "thumbnail": "https://www.legendstv.com/RokuGraphics/Ferry%20Corsten%20WKND.jpg",
+        "title": "Ferry Corsten: WKND",
+        "adBreaks":["00:00:00","00:03:28", "00:14:24", "00:26:16", "00:40:47", "00:51:35", "01:06:09"]
+      
+    },
+    {
+     
+        "content": {
+          "dateAdded": "2017-04-03T04:00:00+00:00",
+          "videos": [{
+        
+              "url": "http://legendstvmediaservice.streaming.mediaservices.windows.net/55dcc5c7-7709-4843-b5c9-fc3450d384ed/WU%20TANG%20SAGA_v2.ism/manifest",
+              "quality": "HD",
+              "videoType": "SMOOTH"
+         
+          }
+          ],
+          "duration": 7741
+        },
+       "genres": ["documentary"],
+        "id": "wu-tang_saga",
+        "releaseDate": "2010-10-05",
+        "shortDescription": "Wu-Tang!",
+        "longDescription": "For the Wu Heads. Take a journey with Cappadonna, in one of the only Wu-Tang documentaries narrated by a member of the world famous rap crew.",
+        "thumbnail": "https://www.legendstv.com/RokuGraphics/Wu-Tang%20Saga.jpg",
+        "title": "Wu-Tang Saga",
+        "adBreaks":["00:00:00","00:15:01", "00:21:42", "00:29:07", "00:36:02", "00:47:35", "01:05:36", "1:30:06", "01:46:35", "01:59:22"]
+      
+    }
+  ]
+}
+ 
