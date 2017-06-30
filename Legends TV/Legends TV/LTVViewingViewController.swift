@@ -46,15 +46,14 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
     var thumbnailString : String?
     var durationString : String?
     var backBtn : UIBarButtonItem?
-
+    var descCellBtn : UIButton?
+    var descIsExtended = false
     
     var moviesArray : [[String : Any]]?
     var picsArray : [UIImage]? = []
     
     var upNextCell : LTVUpNextTableViewCell?
 
-
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.estimatedRowHeight = UITableViewAutomaticDimension
@@ -90,13 +89,25 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
+    @IBAction func descCellToggled(_ sender: UIButton) {
+        
+        descIsExtended = !descIsExtended
+        tableView.reloadRows(at: [IndexPath(item: 1, section: 0)], with: UITableViewRowAnimation.automatic)
+//        if descIsExtended {
+//        
+//        } else {
+//            
+//        }
+        
+
+    }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         switch indexPath.row {
         case 0:
             return 229
         case 1:
-            return 233
+            return descIsExtended ? 400 : 174
         case 2:
             return 168
         case 3:

@@ -13,6 +13,7 @@ class LTVDescriptionTableViewCell: UITableViewCell {
     @IBOutlet var titleLabel: UILabel!
     @IBOutlet var durationLabel: UILabel!
     @IBOutlet var descriptionTextView: UITextView!
+    @IBOutlet weak var cellBtn: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

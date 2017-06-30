@@ -269,23 +269,23 @@
                                     <outlet property="videoPlayerView" destination="Mn6-bm-21l" id="Y7S-z1-s0z"/>
                                 </connections>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DescriptionCell" rowHeight="158" id="8Pn-2i-LY9" userLabel="DescriptionCell" customClass="LTVDescriptionTableViewCell" customModule="Legends_TV" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="257" width="375" height="158"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="DescriptionCell" rowHeight="174" id="8Pn-2i-LY9" userLabel="DescriptionCell" customClass="LTVDescriptionTableViewCell" customModule="Legends_TV" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="257" width="375" height="174"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="8Pn-2i-LY9" id="dd0-0w-pBe">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4px-ya-M6u">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="158"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="174"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Viewing Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFN-cD-KYA">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Viewing Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aFN-cD-KYA">
                                                     <rect key="frame" x="11" y="8" width="352" height="20"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Bold" family="Roboto" pointSize="17"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="60 min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRG-Qf-5OR">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" text="60 min" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aRG-Qf-5OR">
                                                     <rect key="frame" x="11" y="36" width="46" height="13"/>
                                                     <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <constraints>
@@ -294,20 +294,37 @@
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-o3-Wv4">
-                                                    <rect key="frame" x="8" y="58" width="355" height="80"/>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HU4-o3-Wv4">
+                                                    <rect key="frame" x="8" y="58" width="355" height="76"/>
                                                     <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                     <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="17"/>
                                                     <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                 </textView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gW6-ok-CuP">
+                                                    <rect key="frame" x="170" y="134" width="34" height="32"/>
+                                                    <accessibility key="accessibilityConfiguration">
+                                                        <accessibilityTraits key="traits" button="YES" image="YES"/>
+                                                    </accessibility>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="32" id="b8Q-Jg-ZUM"/>
+                                                        <constraint firstAttribute="width" constant="34" id="fF6-AV-gv0"/>
+                                                    </constraints>
+                                                    <state key="normal" image="arrow"/>
+                                                    <connections>
+                                                        <action selector="descCellToggled:" destination="jwB-fB-jFe" eventType="touchUpInside" id="jAL-pp-VY1"/>
+                                                    </connections>
+                                                </button>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <constraints>
                                                 <constraint firstItem="HU4-o3-Wv4" firstAttribute="leading" secondItem="4px-ya-M6u" secondAttribute="leading" constant="8" id="0q6-6u-fsJ"/>
                                                 <constraint firstItem="aFN-cD-KYA" firstAttribute="leading" secondItem="4px-ya-M6u" secondAttribute="leading" constant="11" id="2Yu-Re-7Ta"/>
                                                 <constraint firstItem="aFN-cD-KYA" firstAttribute="top" secondItem="4px-ya-M6u" secondAttribute="top" constant="8" id="5ia-kq-Rvf"/>
-                                                <constraint firstAttribute="bottom" secondItem="HU4-o3-Wv4" secondAttribute="bottom" constant="20" id="BCm-t1-aYB"/>
+                                                <constraint firstAttribute="bottom" secondItem="gW6-ok-CuP" secondAttribute="bottom" constant="8" id="7Kz-0S-Aef"/>
+                                                <constraint firstItem="gW6-ok-CuP" firstAttribute="top" secondItem="HU4-o3-Wv4" secondAttribute="bottom" id="7xy-4L-2JT"/>
+                                                <constraint firstAttribute="bottom" secondItem="HU4-o3-Wv4" secondAttribute="bottom" constant="40" id="BCm-t1-aYB"/>
+                                                <constraint firstItem="gW6-ok-CuP" firstAttribute="centerX" secondItem="aFN-cD-KYA" secondAttribute="centerX" id="U9T-Wa-2ek"/>
                                                 <constraint firstAttribute="trailing" secondItem="aFN-cD-KYA" secondAttribute="trailing" constant="12" id="UzX-M7-EEz"/>
                                                 <constraint firstItem="aRG-Qf-5OR" firstAttribute="top" secondItem="aFN-cD-KYA" secondAttribute="bottom" constant="8" id="cyN-S1-ihN"/>
                                                 <constraint firstItem="aRG-Qf-5OR" firstAttribute="leading" secondItem="aFN-cD-KYA" secondAttribute="leading" id="lxS-z6-9nT"/>
@@ -325,13 +342,14 @@
                                     </constraints>
                                 </tableViewCellContentView>
                                 <connections>
+                                    <outlet property="cellBtn" destination="gW6-ok-CuP" id="ER4-IG-OAF"/>
                                     <outlet property="descriptionTextView" destination="HU4-o3-Wv4" id="ltK-04-B5b"/>
                                     <outlet property="durationLabel" destination="aRG-Qf-5OR" id="mhQ-Wm-wq8"/>
                                     <outlet property="titleLabel" destination="aFN-cD-KYA" id="OGx-HV-lMj"/>
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="UpNextCell" rowHeight="168" id="qO2-n1-wJJ" userLabel="UpNextCollectionCell" customClass="LTVUpNextTableViewCell" customModule="Legends_TV" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="415" width="375" height="168"/>
+                                <rect key="frame" x="0.0" y="431" width="375" height="168"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qO2-n1-wJJ" id="NZc-zo-XJh">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="168"/>
@@ -421,7 +439,7 @@
                                 </connections>
                             </tableViewCell>
                             <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CopyrightCell" id="r16-KL-WRM" userLabel="CopyrightCell">
-                                <rect key="frame" x="0.0" y="583" width="375" height="44"/>
+                                <rect key="frame" x="0.0" y="599" width="375" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="r16-KL-WRM" id="uZV-Zy-bee">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -435,7 +453,7 @@
                                             </constraints>
                                         </view>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="© 2017 Legends Media Group, Inc." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCs-DC-nBj">
-                                            <rect key="frame" x="95" y="12" width="185.5" height="21"/>
+                                            <rect key="frame" x="95.5" y="12" width="185.5" height="21"/>
                                             <fontDescription key="fontDescription" name="Roboto-Regular" family="Roboto" pointSize="12"/>
                                             <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <nil key="highlightedColor"/>
@@ -570,4 +588,7 @@
             <point key="canvasLocation" x="1740" y="932.38380809595208"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="arrow" width="250" height="250"/>
+    </resources>
 </document>
