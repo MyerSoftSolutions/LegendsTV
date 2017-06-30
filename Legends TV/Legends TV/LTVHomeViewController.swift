@@ -111,7 +111,7 @@ class LTVHomeViewController: UITableViewController/*UICollectionViewDataSource, 
         if indexPath.row == picsArray?.count {
             return 53
         } else {
-            return 180
+            return 215
         }
     }
     
