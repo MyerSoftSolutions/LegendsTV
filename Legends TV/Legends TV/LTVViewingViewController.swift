@@ -60,7 +60,6 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         tableView.separatorStyle = .none
         self.createCustomBackButton("< ")
         self.addNavigationIcon()
-        // Do any additional setup after loading the view.
     }
 
     func createCustomBackButton(_ btnTitle: String) {
@@ -84,22 +83,15 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         urlString = dict3["url"] as? String
         tableView.reloadData()
     }
-    //MARK: TableViewDelegate Methods
-    
+
+    //MARK: TableViewDelegate Methods    
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
     @IBAction func descCellToggled(_ sender: UIButton) {
-        
         descIsExtended = !descIsExtended
         tableView.reloadRows(at: [IndexPath(item: 1, section: 0)], with: UITableViewRowAnimation.automatic)
-//        if descIsExtended {
-//        
-//        } else {
-//            
-//        }
         
-
     }
     
     override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -146,6 +138,9 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
             cell.titleLabel.text = viewingDict?["title"] as? String
             cell.durationLabel.text = durationString
             cell.descriptionTextView.text = viewingDict?["longDescription"] as? String
+            if descIsExtended {
+                cell.cellBtn?.transform = CGAffineTransform(rotationAngle: CGFloat((180.0 * Double.pi) / 180.0))
+            }
             
             return cell
         case 2:
