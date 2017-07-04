@@ -175,11 +175,6 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
             if indexPath.row == 0 {
                 let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NowPlayingCell", for: indexPath) as! LTNowPlayingCollectionCell
                 cell.imgView.image = picsArray?[indexPath.row]
-                
-//                let dict = moviesArray[(indexPath.row)] as AnyObject
-//                viewingDict = dict["movie"] as? [String : AnyObject]
-//                
-//                let contentDict = viewingDict?["content"] as! [String : Any]
                 cell.durationLabel.text = durationString
                 return cell
             } else {
@@ -192,18 +187,41 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(moviesArray)
-        let dict = moviesArray[(indexPath.row)] as AnyObject
-        viewingDict = dict["movie"] as? [String : AnyObject]
+        if indexPath.row != 0 {
+            let dict = moviesArray[(indexPath.row)] as AnyObject
+            viewingDict = dict["movie"] as? [String : AnyObject]
+            refreshUpNext(indexPath, selectedDict: dict as! [String : Any])
+            
+            let contentDict = viewingDict?["content"] as! [String : Any]
+            durationString = "\(Int(Int((contentDict["duration"] as? String)!)! / 60)) min "
+            let dict2 = contentDict["videos"] as! [String : Any]
+            let dict3 = dict2["video"] as! [String : Any]
+            
+            urlString = dict3["url"] as? String
+            tableView.reloadData()
+        }
+    }
+    
+    func refreshUpNext (_ indexPath: IndexPath, selectedDict: [String : Any]) {
+        var arrCopy = moviesArray
+        arrCopy.remove(at: (indexPath.row))
+        var newArr = [selectedDict]
+        for dic in arrCopy {
+            newArr.append((dic as AnyObject) as! [String : Any])
+        }
         
-        let contentDict = viewingDict?["content"] as! [String : Any]
-        durationString = "\(Int(Int((contentDict["duration"] as? String)!)! / 60)) min "
-        let dict2 = contentDict["videos"] as! [String : Any]
-        let dict3 = dict2["video"] as! [String : Any]
+        moviesArray = newArr 
         
+        var picArrCopy = picsArray
+        let selectedPic : UIImage = (picArrCopy?[(indexPath.row)])!
+        picArrCopy?.remove(at: (indexPath.row))
+        var newArr2 : [UIImage] = [selectedPic]
         
-        urlString = dict3["url"] as? String
-
-        tableView.reloadData()
+        for pic in picArrCopy! {
+            newArr2.append(pic)
+        }
+        
+        picsArray = newArr2
     }
 
 }

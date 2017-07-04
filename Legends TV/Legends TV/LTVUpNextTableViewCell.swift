@@ -13,14 +13,15 @@ class LTVUpNextTableViewCell: UITableViewCell {
     @IBOutlet var collectionView: UICollectionView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
-        self.collectionView.reloadData()
+        collectionView.reloadData()
     }
 
+    override func prepareForReuse() {
+        collectionView.reloadData()
+        collectionView.contentOffset.x = 0
+    }
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-
-        // Configure the view for the selected state
     }
 
 }

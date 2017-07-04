@@ -9,25 +9,6 @@
 import UIKit
 import Foundation
 
-//struct AppUtility {
-//    
-//    static func lockOrientation(_ orientation: UIInterfaceOrientationMask) {
-//        
-//        guard let delegate = UIApplication.shared.delegate as? AppDelegate else {} {
-//            delegate.orientationLock = orientation
-//        }
-//    }
-//    
-//    /// OPTIONAL Added method to adjust lock and rotate to the desired orientation
-//    static func lockOrientation(_ orientation: UIInterfaceOrientationMask, andRotateTo rotateOrientation:UIInterfaceOrientation) {
-//        
-//        self.lockOrientation(orientation)
-//        
-//        UIDevice.current.setValue(rotateOrientation.rawValue, forKey: "orientation")
-//    }
-//    
-//}
-
 class LTVHomeTableCell : UITableViewCell {
 
     @IBOutlet var imgView: UIImageView!
@@ -60,10 +41,6 @@ class LTVHomeViewController: UITableViewController/*UICollectionViewDataSource, 
         
         moviesArray = jsonHandler.parseMovieArray()
         getData()
-//        self.savedVidBtnHeightCon.constant = 0
-//        self.savedVidsViewHeightCon.constant = 0
-
-                // Do any additional setup after loading the view.
     }
     
     func getData() {
@@ -86,7 +63,6 @@ class LTVHomeViewController: UITableViewController/*UICollectionViewDataSource, 
             }
             DispatchQueue.main.sync {
                 self.tableView.reloadData()
-//                self.savedVidCollectionView.reloadData()
                 activityView.stopAnimating()
             }
             
@@ -156,7 +132,6 @@ class LTVHomeViewController: UITableViewController/*UICollectionViewDataSource, 
             }
             
             vc.moviesArray = newArr as! [[String : Any]]
-            print(vc.moviesArray as Any)
             
             var picArrCopy = picsArray
             let selectedPic : UIImage = (picArrCopy?[(idxPath?.row)!])!
@@ -166,27 +141,8 @@ class LTVHomeViewController: UITableViewController/*UICollectionViewDataSource, 
             for pic in picArrCopy! {
                 newArr2.append(pic)
             }
-            print(newArr2)
             
             vc.picsArray = newArr2
-            
         }
     }
-    
-    //MARK: UICollectionView Datasource Methods
-
-
-//    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-//        return picsArray!.count
-//    }
-//    
-//    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-//        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SavedVidCell", for: indexPath) as! LTSavedVidCollectionCell
-//        cell.imgView.image = picsArray?[indexPath.row]
-//
-//        return cell
-//    }
-    
-    
-
 }
