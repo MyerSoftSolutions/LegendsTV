@@ -147,9 +147,28 @@ class LTVHomeViewController: UITableViewController/*UICollectionViewDataSource, 
             let idxPath = tableView.indexPath(for: cell)
             let dict = moviesArray?[(idxPath?.row)!] as AnyObject
             vc.viewingDict = dict["movie"] as! [String : AnyObject]?
-            vc.moviesArray = moviesArray
-            vc.picsArray = picsArray
             
+            var arrCopy = moviesArray
+            arrCopy?.remove(at: (idxPath?.row)!)
+            var newArr = [dict]
+            for dic in arrCopy! {
+                newArr.append(dic as AnyObject)
+            }
+            
+            vc.moviesArray = newArr as! [[String : Any]]
+            print(vc.moviesArray as Any)
+            
+            var picArrCopy = picsArray
+            let selectedPic : UIImage = (picArrCopy?[(idxPath?.row)!])!
+            picArrCopy?.remove(at: (idxPath?.row)!)
+            var newArr2 : [UIImage] = [selectedPic]
+            
+            for pic in picArrCopy! {
+                newArr2.append(pic)
+            }
+            print(newArr2)
+            
+            vc.picsArray = newArr2
             
         }
     }

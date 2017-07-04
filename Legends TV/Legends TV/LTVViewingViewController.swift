@@ -49,7 +49,7 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
     var descCellBtn : UIButton?
     var descIsExtended = false
     
-    var moviesArray : [[String : Any]]?
+    var moviesArray : [[String : Any]] = []
     var picsArray : [UIImage]? = []
     
     var upNextCell : LTVUpNextTableViewCell?
@@ -84,7 +84,7 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         tableView.reloadData()
     }
 
-    //MARK: TableViewDelegate Methods    
+    //MARK: TableViewDelegate Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
     }
@@ -99,7 +99,7 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         case 0:
             return 229
         case 1:
-            return descIsExtended ? 400 : 174
+            return descIsExtended ? 330 : 174
         case 2:
             return 168
         case 3:
@@ -173,13 +173,13 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
             let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SavedVidCell", for: indexPath) as! LTSavedVidCollectionCell
             cell.imgView.image = picsArray?[indexPath.row]
-    
             return cell
         }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        let dict = moviesArray?[(indexPath.row)] as AnyObject
-        viewingDict = dict["movie"] as! [String : AnyObject]?
+        print(moviesArray)
+        let dict = moviesArray[(indexPath.row)] as AnyObject
+        viewingDict = dict["movie"] as? [String : AnyObject]
         
         let contentDict = viewingDict?["content"] as! [String : Any]
         durationString = "\(Int(Int((contentDict["duration"] as? String)!)! / 60)) min "
