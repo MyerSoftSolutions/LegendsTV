@@ -171,9 +171,23 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         }
     
         func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-            let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SavedVidCell", for: indexPath) as! LTSavedVidCollectionCell
-            cell.imgView.image = picsArray?[indexPath.row]
-            return cell
+            
+            if indexPath.row == 0 {
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "NowPlayingCell", for: indexPath) as! LTNowPlayingCollectionCell
+                cell.imgView.image = picsArray?[indexPath.row]
+                
+//                let dict = moviesArray[(indexPath.row)] as AnyObject
+//                viewingDict = dict["movie"] as? [String : AnyObject]
+//                
+//                let contentDict = viewingDict?["content"] as! [String : Any]
+                cell.durationLabel.text = durationString
+                return cell
+            } else {
+                let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "SavedVidCell", for: indexPath) as! LTSavedVidCollectionCell
+                cell.imgView.image = picsArray?[indexPath.row]
+                return cell
+
+            }
         }
 
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

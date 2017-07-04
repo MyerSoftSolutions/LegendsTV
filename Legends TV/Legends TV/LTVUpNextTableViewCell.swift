@@ -24,3 +24,10 @@ class LTVUpNextTableViewCell: UITableViewCell {
     }
 
 }
+
+class LTNowPlayingCollectionCell : UICollectionViewCell {
+
+    @IBOutlet weak var imgView: UIImageView!
+    @IBOutlet weak var durationLabel: UILabel!
+    
+}
