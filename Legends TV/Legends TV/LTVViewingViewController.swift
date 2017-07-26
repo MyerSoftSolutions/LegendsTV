@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SpotX
 
 let videoFile = "http://playertest.longtailvideo.com/adaptive/oceans/oceans.m3u8"
 //#define posterImage @"http://d3el35u4qe4frz.cloudfront.net/bkaovAYt-480.jpg"
@@ -35,7 +36,7 @@ extension UITableViewController {
 
 }
 
-class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UICollectionViewDelegate, UICollectionViewDataSource {
+class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UICollectionViewDelegate, UICollectionViewDataSource, SpotXAdDelegate {
     
    
     @IBOutlet var videoPlayerView: UIView!
@@ -49,6 +50,9 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
     var descCellBtn : UIButton?
     var descIsExtended = false
     
+    var ad : SpotXView?
+    var vidCell : LTVVideoPlayerTableViewCell?
+    
     var moviesArray : [[String : Any]] = []
     var picsArray : [UIImage]? = []
     
@@ -60,6 +64,7 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         tableView.separatorStyle = .none
         self.createCustomBackButton("< ")
         self.addNavigationIcon()
+        SpotX.initialize(withApiKey: nil, category: "IAB1", section: "Fiction", domain: "com.spotxchange.demo", url: "")
     }
 
     func createCustomBackButton(_ btnTitle: String) {
@@ -84,6 +89,14 @@ class LTVViewingViewController: UITableViewController, JWPlayerDelegate, UIColle
         tableView.reloadData()
     }
 
+    func loadNextAd() {
+        guard let frame = vidCell?.videoPlayerView.frame else { return }
+        ad = SpotXView(frame: frame)
+        ad?.delegate = self
+        ad?.channelID = "85394"
+        
+    }
+    
     //MARK: TableViewDelegate Methods
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
