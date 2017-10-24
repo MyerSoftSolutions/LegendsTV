@@ -56,6 +56,15 @@
 		D9E39B9E1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */; };
 		D9E39B9F1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */; };
 		D9E39BA01EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */; };
+		D9F6E0ED1F9FE74D00284341 /* V2UI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */; };
+		D9F6E0EE1F9FE74D00284341 /* V2UI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */; };
+		D9F6E0EF1F9FE74D00284341 /* V2UI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */; };
+		D9F6E0F11F9FEA3F00284341 /* LegendsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E0F01F9FEA3F00284341 /* LegendsHomeViewController.swift */; };
+		D9F6E0F21F9FEA3F00284341 /* LegendsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E0F01F9FEA3F00284341 /* LegendsHomeViewController.swift */; };
+		D9F6E0F31F9FEA3F00284341 /* LegendsHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E0F01F9FEA3F00284341 /* LegendsHomeViewController.swift */; };
+		D9F6E0F51F9FF20900284341 /* LegendsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E0F41F9FF20900284341 /* LegendsDetailViewController.swift */; };
+		D9F6E0F61F9FF20900284341 /* LegendsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E0F41F9FF20900284341 /* LegendsDetailViewController.swift */; };
+		D9F6E0F71F9FF20900284341 /* LegendsDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9F6E0F41F9FF20900284341 /* LegendsDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +119,9 @@
 		D9E39B951EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVVideoPlayerTableViewCell.swift; sourceTree = "<group>"; };
 		D9E39B991EDA19B800061EEA /* LTVDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVUpNextTableViewCell.swift; sourceTree = "<group>"; };
+		D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = V2UI.storyboard; sourceTree = "<group>"; };
+		D9F6E0F01F9FEA3F00284341 /* LegendsHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendsHomeViewController.swift; sourceTree = "<group>"; };
+		D9F6E0F41F9FF20900284341 /* LegendsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendsDetailViewController.swift; sourceTree = "<group>"; };
 		E196E6809BF60EC39A90C7E0 /* Pods-Legends TV.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legends TV.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Legends TV/Pods-Legends TV.debug.xcconfig"; sourceTree = "<group>"; };
 		FDC752E7BE3695CA461DC5B2 /* Pods-Legends TV.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Legends TV.release.xcconfig"; path = "Pods/Target Support Files/Pods-Legends TV/Pods-Legends TV.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,12 +189,15 @@
 			children = (
 				D904B16A1EC9F17E006525C1 /* AppDelegate.swift */,
 				D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */,
+				D9F6E0F01F9FEA3F00284341 /* LegendsHomeViewController.swift */,
+				D9F6E0F41F9FF20900284341 /* LegendsDetailViewController.swift */,
 				D9E39B911EDA037700061EEA /* LTVViewingViewController.swift */,
 				D9E39B951EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift */,
 				D9E39B991EDA19B800061EEA /* LTVDescriptionTableViewCell.swift */,
 				D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */,
 				D9322F6B1EF78C6D005CAFF3 /* Fonts */,
 				D904B16E1EC9F17E006525C1 /* Main.storyboard */,
+				D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */,
 				D904B1741EC9F17E006525C1 /* Assets.xcassets */,
 				D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */,
 				D904B1791EC9F17E006525C1 /* Info.plist */,
@@ -363,6 +378,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9322F651EF78C5C005CAFF3 /* Roboto-Medium.ttf in Resources */,
+				D9F6E0ED1F9FE74D00284341 /* V2UI.storyboard in Resources */,
 				D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */,
 				D9322F6D1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */,
 				D98145D31ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
@@ -384,6 +400,7 @@
 				D9322F5D1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */,
 				D98145D41ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
 				D9322F6E1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */,
+				D9F6E0EE1F9FE74D00284341 /* V2UI.storyboard in Resources */,
 				D9322F631EF78C5C005CAFF3 /* Roboto-Light.ttf in Resources */,
 				D9322F601EF78C5C005CAFF3 /* Roboto-Condensed.ttf in Resources */,
 			);
@@ -398,6 +415,7 @@
 				D9322F5E1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */,
 				D98145D51ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
 				D9322F6F1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */,
+				D9F6E0EF1F9FE74D00284341 /* V2UI.storyboard in Resources */,
 				D9322F641EF78C5C005CAFF3 /* Roboto-Light.ttf in Resources */,
 				D9322F611EF78C5C005CAFF3 /* Roboto-Condensed.ttf in Resources */,
 			);
@@ -552,6 +570,8 @@
 				D9E39B8E1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D9E39B9A1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
 				D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
+				D9F6E0F51F9FF20900284341 /* LegendsDetailViewController.swift in Sources */,
+				D9F6E0F11F9FEA3F00284341 /* LegendsHomeViewController.swift in Sources */,
 				D9E39B9E1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */,
 				D9E39B961EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift in Sources */,
 				D904B16B1EC9F17E006525C1 /* AppDelegate.swift in Sources */,
@@ -567,6 +587,8 @@
 				D9E39B971EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift in Sources */,
 				D9E39B8F1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */,
+				D9F6E0F21F9FEA3F00284341 /* LegendsHomeViewController.swift in Sources */,
+				D9F6E0F61F9FF20900284341 /* LegendsDetailViewController.swift in Sources */,
 				D9E39B9F1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */,
 				D9E39B931EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 				D9E39B9B1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
@@ -581,6 +603,8 @@
 				D9E39B981EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift in Sources */,
 				D9E39B901ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */,
+				D9F6E0F31F9FEA3F00284341 /* LegendsHomeViewController.swift in Sources */,
+				D9F6E0F71F9FF20900284341 /* LegendsDetailViewController.swift in Sources */,
 				D9E39BA01EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */,
 				D9E39B941EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 				D9E39B9C1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
