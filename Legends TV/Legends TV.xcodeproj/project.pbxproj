@@ -14,6 +14,12 @@
 		D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */; };
 		D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B1821EC9F17E006525C1 /* Legends_TVTests.swift */; };
 		D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */; };
+		D91B75C21FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */; };
+		D91B75C31FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */; };
+		D91B75C41FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */; };
+		D91B75C51FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */; };
+		D91B75C61FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */; };
+		D91B75C71FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */; };
 		D9322F5C1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9322F571EF78C5C005CAFF3 /* Roboto-Bold.ttf */; };
 		D9322F5D1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9322F571EF78C5C005CAFF3 /* Roboto-Bold.ttf */; };
 		D9322F5E1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9322F571EF78C5C005CAFF3 /* Roboto-Bold.ttf */; };
@@ -102,6 +108,8 @@
 		D904B1891EC9F17E006525C1 /* Legends TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Legends TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legends_TVUITests.swift; sourceTree = "<group>"; };
 		D904B18F1EC9F17E006525C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendsListingViewController.swift; sourceTree = "<group>"; };
+		D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LegendsListingViewController.xib; sourceTree = "<group>"; };
 		D9322F571EF78C5C005CAFF3 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		D9322F581EF78C5C005CAFF3 /* Roboto-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Condensed.ttf"; path = "../Roboto-Condensed.ttf"; sourceTree = "<group>"; };
 		D9322F591EF78C5C005CAFF3 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../Roboto-Light.ttf"; sourceTree = "<group>"; };
@@ -191,6 +199,8 @@
 				D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */,
 				D9F6E0F01F9FEA3F00284341 /* LegendsHomeViewController.swift */,
 				D9F6E0F41F9FF20900284341 /* LegendsDetailViewController.swift */,
+				D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */,
+				D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */,
 				D9E39B911EDA037700061EEA /* LTVViewingViewController.swift */,
 				D9E39B951EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift */,
 				D9E39B991EDA19B800061EEA /* LTVDescriptionTableViewCell.swift */,
@@ -381,6 +391,7 @@
 				D9F6E0ED1F9FE74D00284341 /* V2UI.storyboard in Resources */,
 				D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */,
 				D9322F6D1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */,
+				D91B75C51FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */,
 				D98145D31ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
 				D9322F5C1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */,
 				D904B1751EC9F17E006525C1 /* Assets.xcassets in Resources */,
@@ -399,6 +410,7 @@
 				D9322F661EF78C5C005CAFF3 /* Roboto-Medium.ttf in Resources */,
 				D9322F5D1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */,
 				D98145D41ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
+				D91B75C61FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */,
 				D9322F6E1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */,
 				D9F6E0EE1F9FE74D00284341 /* V2UI.storyboard in Resources */,
 				D9322F631EF78C5C005CAFF3 /* Roboto-Light.ttf in Resources */,
@@ -414,6 +426,7 @@
 				D9322F671EF78C5C005CAFF3 /* Roboto-Medium.ttf in Resources */,
 				D9322F5E1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */,
 				D98145D51ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
+				D91B75C71FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */,
 				D9322F6F1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */,
 				D9F6E0EF1F9FE74D00284341 /* V2UI.storyboard in Resources */,
 				D9322F641EF78C5C005CAFF3 /* Roboto-Light.ttf in Resources */,
@@ -567,6 +580,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E39B921EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
+				D91B75C21FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */,
 				D9E39B8E1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D9E39B9A1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
 				D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
@@ -583,6 +597,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91B75C31FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */,
 				D98145D01ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D9E39B971EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift in Sources */,
 				D9E39B8F1ED9D17400061EEA /* JSONHandler.swift in Sources */,
@@ -599,6 +614,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91B75C41FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */,
 				D98145D11ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D9E39B981EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift in Sources */,
 				D9E39B901ED9D17400061EEA /* JSONHandler.swift in Sources */,

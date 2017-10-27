@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13528" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13526"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LegendsListingViewController" customModule="Legends_TV" customModuleProvider="target">
+            <connections>
+                <outlet property="durationLabel" destination="52g-0y-aCB" id="fN2-Eu-Q8e"/>
+                <outlet property="imageView" destination="jyv-gj-mxZ" id="UKI-o2-3ZN"/>
+                <outlet property="nameLabel" destination="6k5-iw-GB6" id="DYk-ts-C93"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="jyv-gj-mxZ">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6k5-iw-GB6">
+                    <rect key="frame" x="15" y="478" width="291" height="78"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="23"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="52g-0y-aCB">
+                    <rect key="frame" x="15" y="558" width="33" height="16"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XDO-1d-gAI">
+                    <rect key="frame" x="315" y="529" width="45" height="45"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="45" id="PV9-CW-Ly7"/>
+                        <constraint firstAttribute="height" constant="45" id="tyb-oB-KF3"/>
+                    </constraints>
+                    <state key="normal" image="playBtn"/>
+                    <connections>
+                        <action selector="playTapped:" destination="-1" eventType="touchUpInside" id="G0a-Qj-d70"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="52g-0y-aCB" firstAttribute="top" secondItem="6k5-iw-GB6" secondAttribute="bottom" constant="2" id="3mC-X5-jA0"/>
+                <constraint firstItem="jyv-gj-mxZ" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="8c5-rq-UfN"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="XDO-1d-gAI" secondAttribute="trailing" constant="15" id="FSC-lZ-snL"/>
+                <constraint firstItem="jyv-gj-mxZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="FkV-5Z-Iho"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6k5-iw-GB6" secondAttribute="trailing" constant="69" id="KcV-RI-57Y"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="52g-0y-aCB" secondAttribute="bottom" constant="93" id="PJK-hv-zTW"/>
+                <constraint firstAttribute="trailing" secondItem="jyv-gj-mxZ" secondAttribute="trailing" id="S5U-aV-hxO"/>
+                <constraint firstItem="6k5-iw-GB6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="SZw-PF-5oj"/>
+                <constraint firstItem="52g-0y-aCB" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="15" id="Xqk-oR-Txu"/>
+                <constraint firstItem="jyv-gj-mxZ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Yc3-eW-MIy"/>
+                <constraint firstItem="XDO-1d-gAI" firstAttribute="bottom" secondItem="52g-0y-aCB" secondAttribute="bottom" id="o1K-zf-pUF"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="34.5" y="68.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="playBtn" width="150" height="150"/>
+    </resources>
+</document>
