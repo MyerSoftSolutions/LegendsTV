@@ -25,7 +25,9 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate {
         // Dispose of any resources that can be recreated.
     }
     
-
-    
+    @IBAction func swipeUp() {
+        performSegue(withIdentifier: "DetailSegue", sender: self)
+        
+    }
 
 }

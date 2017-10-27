@@ -26,6 +26,7 @@ class LegendsDetailViewController: UIViewController {
     
 
     @IBAction func slideUpTapped(_ sender: Any) {
+        dismiss(animated: true, completion: nil)
     }
     /*
     // MARK: - Navigation
