@@ -16,7 +16,7 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        slideUpBtn.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         // Do any additional setup after loading the view.
     }
 
