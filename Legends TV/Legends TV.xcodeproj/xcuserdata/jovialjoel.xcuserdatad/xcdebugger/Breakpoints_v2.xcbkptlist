@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Legends TV/LTVViewingViewController.swift"
-            timestampString = "530571967.289859"
+            timestampString = "531080968.253166"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "92"
@@ -26,12 +26,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Legends TV/LegendsHomeViewController.swift"
-            timestampString = "531078061.167761"
+            timestampString = "531080968.253544"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "68"
-            endingLineNumber = "68"
-            landmarkName = "setupHomeScroll()"
+            startingLineNumber = "87"
+            endingLineNumber = "87"
+            landmarkName = "playPressed()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

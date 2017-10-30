@@ -30,18 +30,4 @@ extension UIView {
         
         return view
     }
-    
-    /// Stretches the input view to the UIView frame using Auto-layout
-    ///
-    /// - Parameter view: The view to stretch.
-//    func stretch(view: UIView) {
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//
-//        NSLayoutConstraint.active([
-//            view.topAnchor.constraint(equalTo: topAnchor),
-//            view.leftAnchor.constraint(equalTo: leftAnchor),
-//            view.rightAnchor.constraint(equalTo: rightAnchor),
-//            view.bottomAnchor.constraint(equalTo: bottomAnchor)
-//            ])
-//    }
 }

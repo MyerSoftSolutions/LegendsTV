@@ -9,8 +9,6 @@
 import UIKit
 
 class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, ListingViewDelegate {
-    
-    
 
     @IBOutlet weak var homeScrollView: UIScrollView!
     @IBOutlet weak var homePageControl: UIPageControl!
@@ -57,31 +55,46 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
     
     //MARK: Method that loads LegendsListingVCs in the proper amount of moviearray.count and adds them to the homeScrollView contentView width by SCREEN_WIDTH * count for paging
     func setupHomeScroll() {
+        var viewingDict : [String : AnyObject]
         
         if let arr = picsArray {
             homeScrollView.contentSize = CGSize(width: ScreenSize.SCREEN_WIDTH * CGFloat((moviesArray?.count)!), height: ScreenSize.SCREEN_HEIGHT)
             
             var count = 0
             
-            for pic in picsArray! {
-//                let listingView = LegendsListingView(frame: CGRect(x: ScreenSize.SCREEN_WIDTH * CGFloat(count), y: 0, width: ScreenSize.SCREEN_WIDTH, height: ScreenSize.SCREEN_HEIGHT))
+            for __ in picsArray! {
                 let listingView = LegendsListingView(frame: CGRect(x: ScreenSize.SCREEN_WIDTH * CGFloat(count), y: 0, width: ScreenSize.SCREEN_WIDTH, height: ScreenSize.SCREEN_HEIGHT))
+                listingView.delegate = self
                 let img = arr[count]
                 listingView.imageView.image = img
+                
+                //Grab proper dictionary from movies array and parse data for labels
+                let dict = moviesArray?[count] as AnyObject
+                viewingDict = dict["movie"] as! [String : AnyObject]
+                listingView.titleLabel.text = viewingDict["title"] as? String
+                
+                let dict2 = viewingDict["content"] as! [String : Any]
+                listingView.durationLabel.text = "\(Int(Int((dict2["duration"] as? String)!)! / 60)) min "
+                
                 homeScrollView.addSubview(listingView)
                 count += 1
             }
-            print(homeScrollView.contentSize)
-            
         }
-        
-
-        
+     
     }
     
     //MARK: ListingViewDelegate for when Play button tapped
     func playPressed() {
     
+    }
+    
+    //MARK: UIScrollViewDelegate Methods
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        // Test the offset and calculate the current page after scrolling ends
+        let pageWidth : CGFloat = scrollView.frame.width
+        let currentPage : CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
+        // Change the indicator
+        homePageControl.currentPage = Int(currentPage);
     }
     
     override func didReceiveMemoryWarning() {
