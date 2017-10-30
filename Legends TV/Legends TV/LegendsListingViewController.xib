@@ -14,11 +14,11 @@
         </array>
     </customFonts>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LegendsListingViewController" customModule="Legends_TV" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LegendsListingView" customModule="Legends_TV" customModuleProvider="target">
             <connections>
-                <outlet property="durationLabel" destination="52g-0y-aCB" id="fN2-Eu-Q8e"/>
-                <outlet property="imageView" destination="jyv-gj-mxZ" id="UKI-o2-3ZN"/>
-                <outlet property="nameLabel" destination="6k5-iw-GB6" id="DYk-ts-C93"/>
+                <outlet property="durationLabel" destination="52g-0y-aCB" id="JQI-dw-sAd"/>
+                <outlet property="imageView" destination="jyv-gj-mxZ" id="LyM-H3-cKE"/>
+                <outlet property="nameLabel" destination="6k5-iw-GB6" id="TGX-S1-2nj"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -50,7 +50,7 @@
                     </constraints>
                     <state key="normal" image="playBtn"/>
                     <connections>
-                        <action selector="playTapped:" destination="-1" eventType="touchUpInside" id="G0a-Qj-d70"/>
+                        <action selector="playTapped:" destination="-1" eventType="touchUpInside" id="x9l-td-5uQ"/>
                     </connections>
                 </button>
             </subviews>

@@ -14,12 +14,15 @@
 		D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D904B1761EC9F17E006525C1 /* LaunchScreen.storyboard */; };
 		D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B1821EC9F17E006525C1 /* Legends_TVTests.swift */; };
 		D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */; };
-		D91B75C21FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */; };
-		D91B75C31FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */; };
-		D91B75C41FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */; };
-		D91B75C51FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */; };
-		D91B75C61FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */; };
-		D91B75C71FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */; };
+		D91B75C91FA6426B007F2100 /* LegendsGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75C81FA6426B007F2100 /* LegendsGlobals.swift */; };
+		D91B75CA1FA6426B007F2100 /* LegendsGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75C81FA6426B007F2100 /* LegendsGlobals.swift */; };
+		D91B75CB1FA6426B007F2100 /* LegendsGlobals.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75C81FA6426B007F2100 /* LegendsGlobals.swift */; };
+		D91B75CD1FA65DCF007F2100 /* LegendsListingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91B75CC1FA65DCF007F2100 /* LegendsListingView.xib */; };
+		D91B75CE1FA65DCF007F2100 /* LegendsListingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91B75CC1FA65DCF007F2100 /* LegendsListingView.xib */; };
+		D91B75CF1FA65DCF007F2100 /* LegendsListingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D91B75CC1FA65DCF007F2100 /* LegendsListingView.xib */; };
+		D91B75D11FA65DF5007F2100 /* LegendsListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75D01FA65DF5007F2100 /* LegendsListingView.swift */; };
+		D91B75D21FA65DF5007F2100 /* LegendsListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75D01FA65DF5007F2100 /* LegendsListingView.swift */; };
+		D91B75D31FA65DF5007F2100 /* LegendsListingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D91B75D01FA65DF5007F2100 /* LegendsListingView.swift */; };
 		D9322F5C1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9322F571EF78C5C005CAFF3 /* Roboto-Bold.ttf */; };
 		D9322F5D1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9322F571EF78C5C005CAFF3 /* Roboto-Bold.ttf */; };
 		D9322F5E1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D9322F571EF78C5C005CAFF3 /* Roboto-Bold.ttf */; };
@@ -38,6 +41,9 @@
 		D9322F6D1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */ = {isa = PBXBuildFile; fileRef = D9322F6C1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json */; };
 		D9322F6E1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */ = {isa = PBXBuildFile; fileRef = D9322F6C1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json */; };
 		D9322F6F1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */ = {isa = PBXBuildFile; fileRef = D9322F6C1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json */; };
+		D970177C1FA79A0B0011664F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970177B1FA79A0B0011664F /* UIViewExtension.swift */; };
+		D970177D1FA79A0B0011664F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970177B1FA79A0B0011664F /* UIViewExtension.swift */; };
+		D970177E1FA79A0B0011664F /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D970177B1FA79A0B0011664F /* UIViewExtension.swift */; };
 		D974EB771EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D974EB761EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework */; };
 		D974EB781EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D974EB761EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework */; };
 		D974EB791EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D974EB761EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework */; };
@@ -108,14 +114,16 @@
 		D904B1891EC9F17E006525C1 /* Legends TVUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Legends TVUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D904B18D1EC9F17E006525C1 /* Legends_TVUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Legends_TVUITests.swift; sourceTree = "<group>"; };
 		D904B18F1EC9F17E006525C1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendsListingViewController.swift; sourceTree = "<group>"; };
-		D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LegendsListingViewController.xib; sourceTree = "<group>"; };
+		D91B75C81FA6426B007F2100 /* LegendsGlobals.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendsGlobals.swift; sourceTree = "<group>"; };
+		D91B75CC1FA65DCF007F2100 /* LegendsListingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LegendsListingView.xib; sourceTree = "<group>"; };
+		D91B75D01FA65DF5007F2100 /* LegendsListingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendsListingView.swift; sourceTree = "<group>"; };
 		D9322F571EF78C5C005CAFF3 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Bold.ttf"; path = "../Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		D9322F581EF78C5C005CAFF3 /* Roboto-Condensed.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Condensed.ttf"; path = "../Roboto-Condensed.ttf"; sourceTree = "<group>"; };
 		D9322F591EF78C5C005CAFF3 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Light.ttf"; path = "../Roboto-Light.ttf"; sourceTree = "<group>"; };
 		D9322F5A1EF78C5C005CAFF3 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Medium.ttf"; path = "../Roboto-Medium.ttf"; sourceTree = "<group>"; };
 		D9322F5B1EF78C5C005CAFF3 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Roboto-Regular.ttf"; path = "../Roboto-Regular.ttf"; sourceTree = "<group>"; };
 		D9322F6C1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = VideoFeedApril2017Roku.json; sourceTree = "<group>"; };
+		D970177B1FA79A0B0011664F /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		D974EB761EDB61C800ADA6B3 /* JWPlayer-iOS-SDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = "JWPlayer-iOS-SDK.framework"; sourceTree = "<group>"; };
 		D974EB7A1EDB62B800ADA6B3 /* Legends TV-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Legends TV-Bridging-Header.h"; sourceTree = "<group>"; };
 		D974EB7B1EDB62B800ADA6B3 /* Legends TVTests-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Legends TVTests-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -199,12 +207,14 @@
 				D98145CE1ED091C000ED1C12 /* LTVHomeViewController.swift */,
 				D9F6E0F01F9FEA3F00284341 /* LegendsHomeViewController.swift */,
 				D9F6E0F41F9FF20900284341 /* LegendsDetailViewController.swift */,
-				D91B75C01FA3EE49007F2100 /* LegendsListingViewController.swift */,
-				D91B75C11FA3EE49007F2100 /* LegendsListingViewController.xib */,
+				D91B75D01FA65DF5007F2100 /* LegendsListingView.swift */,
+				D91B75CC1FA65DCF007F2100 /* LegendsListingView.xib */,
+				D970177B1FA79A0B0011664F /* UIViewExtension.swift */,
 				D9E39B911EDA037700061EEA /* LTVViewingViewController.swift */,
 				D9E39B951EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift */,
 				D9E39B991EDA19B800061EEA /* LTVDescriptionTableViewCell.swift */,
 				D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */,
+				D91B75C81FA6426B007F2100 /* LegendsGlobals.swift */,
 				D9322F6B1EF78C6D005CAFF3 /* Fonts */,
 				D904B16E1EC9F17E006525C1 /* Main.storyboard */,
 				D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */,
@@ -391,9 +401,9 @@
 				D9F6E0ED1F9FE74D00284341 /* V2UI.storyboard in Resources */,
 				D904B1781EC9F17E006525C1 /* LaunchScreen.storyboard in Resources */,
 				D9322F6D1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */,
-				D91B75C51FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */,
 				D98145D31ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
 				D9322F5C1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */,
+				D91B75CD1FA65DCF007F2100 /* LegendsListingView.xib in Resources */,
 				D904B1751EC9F17E006525C1 /* Assets.xcassets in Resources */,
 				D9322F621EF78C5C005CAFF3 /* Roboto-Light.ttf in Resources */,
 				D9322F681EF78C5C005CAFF3 /* Roboto-Regular.ttf in Resources */,
@@ -406,11 +416,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91B75CE1FA65DCF007F2100 /* LegendsListingView.xib in Resources */,
 				D9322F691EF78C5C005CAFF3 /* Roboto-Regular.ttf in Resources */,
 				D9322F661EF78C5C005CAFF3 /* Roboto-Medium.ttf in Resources */,
 				D9322F5D1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */,
 				D98145D41ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
-				D91B75C61FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */,
 				D9322F6E1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */,
 				D9F6E0EE1F9FE74D00284341 /* V2UI.storyboard in Resources */,
 				D9322F631EF78C5C005CAFF3 /* Roboto-Light.ttf in Resources */,
@@ -422,11 +432,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D91B75CF1FA65DCF007F2100 /* LegendsListingView.xib in Resources */,
 				D9322F6A1EF78C5C005CAFF3 /* Roboto-Regular.ttf in Resources */,
 				D9322F671EF78C5C005CAFF3 /* Roboto-Medium.ttf in Resources */,
 				D9322F5E1EF78C5C005CAFF3 /* Roboto-Bold.ttf in Resources */,
 				D98145D51ED0C61000ED1C12 /* VideoFeedApril2017-2.json in Resources */,
-				D91B75C71FA3EE49007F2100 /* LegendsListingViewController.xib in Resources */,
 				D9322F6F1EFA1739005CAFF3 /* VideoFeedApril2017Roku.json in Resources */,
 				D9F6E0EF1F9FE74D00284341 /* V2UI.storyboard in Resources */,
 				D9322F641EF78C5C005CAFF3 /* Roboto-Light.ttf in Resources */,
@@ -580,14 +590,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D9E39B921EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
-				D91B75C21FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */,
 				D9E39B8E1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D9E39B9A1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
 				D98145CF1ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D9F6E0F51F9FF20900284341 /* LegendsDetailViewController.swift in Sources */,
 				D9F6E0F11F9FEA3F00284341 /* LegendsHomeViewController.swift in Sources */,
+				D91B75D11FA65DF5007F2100 /* LegendsListingView.swift in Sources */,
 				D9E39B9E1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */,
 				D9E39B961EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift in Sources */,
+				D970177C1FA79A0B0011664F /* UIViewExtension.swift in Sources */,
+				D91B75C91FA6426B007F2100 /* LegendsGlobals.swift in Sources */,
 				D904B16B1EC9F17E006525C1 /* AppDelegate.swift in Sources */,
 				D904B1731EC9F17E006525C1 /* Legends_TV.xcdatamodeld in Sources */,
 			);
@@ -597,13 +609,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D91B75C31FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */,
 				D98145D01ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D9E39B971EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift in Sources */,
 				D9E39B8F1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D904B1831EC9F17E006525C1 /* Legends_TVTests.swift in Sources */,
 				D9F6E0F21F9FEA3F00284341 /* LegendsHomeViewController.swift in Sources */,
+				D91B75CA1FA6426B007F2100 /* LegendsGlobals.swift in Sources */,
+				D970177D1FA79A0B0011664F /* UIViewExtension.swift in Sources */,
 				D9F6E0F61F9FF20900284341 /* LegendsDetailViewController.swift in Sources */,
+				D91B75D21FA65DF5007F2100 /* LegendsListingView.swift in Sources */,
 				D9E39B9F1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */,
 				D9E39B931EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 				D9E39B9B1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
@@ -614,13 +628,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D91B75C41FA3EE49007F2100 /* LegendsListingViewController.swift in Sources */,
 				D98145D11ED091C000ED1C12 /* LTVHomeViewController.swift in Sources */,
 				D9E39B981EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift in Sources */,
 				D9E39B901ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D904B18E1EC9F17E006525C1 /* Legends_TVUITests.swift in Sources */,
 				D9F6E0F31F9FEA3F00284341 /* LegendsHomeViewController.swift in Sources */,
+				D91B75CB1FA6426B007F2100 /* LegendsGlobals.swift in Sources */,
+				D970177E1FA79A0B0011664F /* UIViewExtension.swift in Sources */,
 				D9F6E0F71F9FF20900284341 /* LegendsDetailViewController.swift in Sources */,
+				D91B75D31FA65DF5007F2100 /* LegendsListingView.swift in Sources */,
 				D9E39BA01EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */,
 				D9E39B941EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 				D9E39B9C1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
@@ -785,7 +801,7 @@
 					"$(PROJECT_DIR)/Legends\\ TV",
 				);
 				INFOPLIST_FILE = "Legends TV/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "legends-tv-2017";
@@ -812,7 +828,7 @@
 					"$(PROJECT_DIR)/Legends\\ TV",
 				);
 				INFOPLIST_FILE = "Legends TV/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "legends-tv-2017";
