@@ -19,6 +19,7 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
     var moviesArray : [[String : Any]]?
     var picsArray : [UIImage]? = []
     
+    var currentPage = 0
     override func viewDidLoad() {
         super.viewDidLoad()
         slideUpBtn.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
@@ -59,7 +60,6 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
         
         if let arr = picsArray {
             homeScrollView.contentSize = CGSize(width: ScreenSize.SCREEN_WIDTH * CGFloat((moviesArray?.count)!), height: ScreenSize.SCREEN_HEIGHT)
-            
             var count = 0
             
             for __ in picsArray! {
@@ -80,10 +80,9 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
                 count += 1
             }
         }
-     
     }
     
-    //MARK: ListingViewDelegate for when Play button tapped
+    //MARK: ListingViewDelegate for when Play button tapped, segue to full Screen Video player
     func playPressed() {
     
     }
@@ -92,9 +91,9 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
         // Test the offset and calculate the current page after scrolling ends
         let pageWidth : CGFloat = scrollView.frame.width
-        let currentPage : CGFloat = floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1
+        currentPage = Int(floor((scrollView.contentOffset.x-pageWidth/2)/pageWidth)+1)
         // Change the indicator
-        homePageControl.currentPage = Int(currentPage);
+        homePageControl.currentPage = currentPage
     }
     
     override func didReceiveMemoryWarning() {
@@ -105,4 +104,12 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
         performSegue(withIdentifier: "DetailSegue", sender: self)
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {        
+        if segue.identifier == "DetailSegue" {
+            let vc = segue.destination as! LegendsDetailViewController
+            
+            let dict = moviesArray?[currentPage] as AnyObject
+            vc.viewingDict = dict["movie"] as? [String : AnyObject]
+        }
+    }
 }

@@ -12,13 +12,22 @@ class LegendsDetailViewController: UIViewController {
     @IBOutlet weak var slideUpBtn: UIButton!
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var descTextView: UITextView!
-    
+    var viewingDict : [String : AnyObject]?
+
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        
+        if (viewingDict != nil) {
+            titleLabel.text = viewingDict!["title"] as? String
+            descTextView.text = viewingDict!["longDescription"] as? String
+        }
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
