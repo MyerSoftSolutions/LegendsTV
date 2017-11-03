@@ -7,12 +7,15 @@
 //
 
 import Foundation
+import UIKit
 extension UIView {
    
     /// Helper method to init and setup the view from the Nib.
     func xibSetup() {
         let view = loadFromNib()
         addSubview(view)
+        stretch(view: view)
+
     }
     
     /// Method to init the view from a Nib.
@@ -29,5 +32,16 @@ extension UIView {
         }
         
         return view
+    }
+    
+    func stretch(view: UIView) {
+        view.translatesAutoresizingMaskIntoConstraints = false
+        
+        NSLayoutConstraint.activate([
+            view.topAnchor.constraint(equalTo: topAnchor),
+            view.leftAnchor.constraint(equalTo: leftAnchor),
+            view.rightAnchor.constraint(equalTo: rightAnchor),
+            view.bottomAnchor.constraint(equalTo: bottomAnchor)
+            ])
     }
 }
