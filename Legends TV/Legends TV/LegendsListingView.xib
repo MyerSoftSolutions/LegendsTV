@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13174"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
             <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue-BoldItalic</string>
         </array>
     </customFonts>
     <objects>
@@ -40,24 +41,24 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Qo-nX-6GZ">
-                    <rect key="frame" x="15" y="566" width="125" height="16"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <rect key="frame" x="15" y="565.5" width="125" height="21.5"/>
+                    <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jtr-MX-TIc">
-                    <rect key="frame" x="15" y="523" width="279" height="36"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <rect key="frame" x="15" y="528" width="279" height="36"/>
+                    <fontDescription key="fontDescription" name="HelveticaNeue-BoldItalic" family="Helvetica Neue" pointSize="28"/>
                     <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bCb-Wz-kgK">
-                    <rect key="frame" x="315" y="537" width="45" height="45"/>
+                    <rect key="frame" x="315" y="542" width="45" height="45"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="45" id="QNl-GX-Agb"/>
                         <constraint firstAttribute="width" constant="45" id="fmG-dD-hTU"/>
                     </constraints>
-                    <state key="normal" image="playBtn"/>
+                    <state key="normal" image="playButton"/>
                     <connections>
                         <action selector="playTapped:" destination="-1" eventType="touchUpInside" id="pbX-rh-hPg"/>
                     </connections>
@@ -73,7 +74,7 @@
                 <constraint firstItem="Jtr-MX-TIc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="15" id="ZMR-12-lbm"/>
                 <constraint firstItem="fd3-jk-K3k" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="463" id="cFv-Y1-yft"/>
                 <constraint firstItem="DAH-R4-3fB" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fAO-V9-SiT"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Qo-nX-6GZ" secondAttribute="bottom" constant="85" id="jjE-w0-zQu"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="1Qo-nX-6GZ" secondAttribute="bottom" constant="80" id="jjE-w0-zQu"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fd3-jk-K3k" secondAttribute="trailing" constant="81" id="kaq-0W-zkf"/>
                 <constraint firstItem="bCb-Wz-kgK" firstAttribute="bottom" secondItem="1Qo-nX-6GZ" secondAttribute="bottom" id="lnW-U6-fd1"/>
                 <constraint firstItem="DAH-R4-3fB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="nQx-M1-WnW"/>
@@ -87,6 +88,6 @@
         </view>
     </objects>
     <resources>
-        <image name="playBtn" width="150" height="150"/>
+        <image name="playButton" width="592" height="590"/>
     </resources>
 </document>

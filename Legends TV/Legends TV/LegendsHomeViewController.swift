@@ -56,6 +56,9 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
     
     //MARK: Method that loads LegendsListingVCs in the proper amount of moviearray.count and adds them to the homeScrollView contentView width by SCREEN_WIDTH * count for paging
     func setupHomeScroll() {
+        if moviesArray != nil {
+            homePageControl.numberOfPages = (moviesArray?.count)!
+        }
         var viewingDict : [String : AnyObject]
         
         if let arr = picsArray {
@@ -74,7 +77,7 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
                 listingView.titleLabel.text = viewingDict["title"] as? String
                 
                 let dict2 = viewingDict["content"] as! [String : Any]
-                listingView.durationLabel.text = "\(Int(Int((dict2["duration"] as? String)!)! / 60)) min "
+                listingView.durationLabel.text = "\(Int(Int((dict2["duration"] as? String)!)! / 60)) MINS"
                 
                 homeScrollView.addSubview(listingView)
                 count += 1

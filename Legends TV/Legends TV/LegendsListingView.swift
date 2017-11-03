@@ -21,10 +21,8 @@ class LegendsListingView: UIView {
     var delegate : ListingViewDelegate?
     
     required init?(coder aDecoder: NSCoder) {
-        
         super.init(coder: aDecoder)
         xibSetup()
-
     }
 
     override init(frame: CGRect) {
