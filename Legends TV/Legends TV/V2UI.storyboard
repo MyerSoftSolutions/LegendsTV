@@ -73,6 +73,7 @@
                         <outlet property="homePageControl" destination="Jwv-KN-Nwc" id="K8a-8K-MQE"/>
                         <outlet property="homeScrollView" destination="QbM-9R-6Fs" id="hjK-4x-TGR"/>
                         <outlet property="slideUpBtn" destination="FhD-Nn-riR" id="gov-rQ-Mxm"/>
+                        <segue destination="Agn-iR-lBJ" kind="show" identifier="PlayListingSegue" id="K0M-6a-CKD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9j-ab-5l9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -83,6 +84,38 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="304.80000000000001" y="-210.04497751124438"/>
+        </scene>
+        <!--Legends Video View Controller-->
+        <scene sceneID="oq7-pW-TKo">
+            <objects>
+                <viewController storyboardIdentifier="LegendsVideoViewController" id="B3z-uv-ZBI" customClass="LegendsVideoViewController" customModule="Legends_TV" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qih-N0-PW8">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQd-kS-bcM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="YQd-kS-bcM" firstAttribute="bottom" secondItem="ZEA-3N-sjs" secondAttribute="bottom" id="Aid-tx-Dcx"/>
+                            <constraint firstItem="YQd-kS-bcM" firstAttribute="leading" secondItem="ZEA-3N-sjs" secondAttribute="leading" id="Pwq-60-1bM"/>
+                            <constraint firstItem="YQd-kS-bcM" firstAttribute="top" secondItem="qih-N0-PW8" secondAttribute="top" id="g4t-Qu-PNP"/>
+                            <constraint firstItem="YQd-kS-bcM" firstAttribute="height" secondItem="qih-N0-PW8" secondAttribute="height" id="h0P-la-VVW"/>
+                            <constraint firstItem="YQd-kS-bcM" firstAttribute="trailing" secondItem="ZEA-3N-sjs" secondAttribute="trailing" id="wIm-fn-eGr"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZEA-3N-sjs"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="tkH-i6-7Mp"/>
+                    <connections>
+                        <outlet property="videoPlayerView" destination="YQd-kS-bcM" id="XDX-Wl-ihk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5Di-qr-h8N" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2175" y="-209"/>
         </scene>
         <!--Legends Detail View Controller-->
         <scene sceneID="uV6-DX-wLh">
@@ -187,6 +220,24 @@
                 </swipeGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="589.60000000000002" y="600.44977511244383"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="ktb-h9-keD">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Agn-iR-lBJ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UfC-g0-NrR">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="B3z-uv-ZBI" kind="relationship" relationship="rootViewController" id="YzU-g0-uXE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DSF-6D-zQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1500.8" y="-208.69565217391306"/>
         </scene>
     </scenes>
     <resources>

@@ -68,6 +68,9 @@
 		D9E39B9E1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */; };
 		D9E39B9F1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */; };
 		D9E39BA01EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */; };
+		D9EF0BC31FB27A4400C097A8 /* LegendsVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF0BC21FB27A4400C097A8 /* LegendsVideoViewController.swift */; };
+		D9EF0BC41FB27A4400C097A8 /* LegendsVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF0BC21FB27A4400C097A8 /* LegendsVideoViewController.swift */; };
+		D9EF0BC51FB27A4400C097A8 /* LegendsVideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9EF0BC21FB27A4400C097A8 /* LegendsVideoViewController.swift */; };
 		D9F6E0ED1F9FE74D00284341 /* V2UI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */; };
 		D9F6E0EE1F9FE74D00284341 /* V2UI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */; };
 		D9F6E0EF1F9FE74D00284341 /* V2UI.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */; };
@@ -135,6 +138,7 @@
 		D9E39B951EDA195700061EEA /* LTVVideoPlayerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVVideoPlayerTableViewCell.swift; sourceTree = "<group>"; };
 		D9E39B991EDA19B800061EEA /* LTVDescriptionTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVDescriptionTableViewCell.swift; sourceTree = "<group>"; };
 		D9E39B9D1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LTVUpNextTableViewCell.swift; sourceTree = "<group>"; };
+		D9EF0BC21FB27A4400C097A8 /* LegendsVideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendsVideoViewController.swift; sourceTree = "<group>"; };
 		D9F6E0EC1F9FE74D00284341 /* V2UI.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = V2UI.storyboard; sourceTree = "<group>"; };
 		D9F6E0F01F9FEA3F00284341 /* LegendsHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendsHomeViewController.swift; sourceTree = "<group>"; };
 		D9F6E0F41F9FF20900284341 /* LegendsDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LegendsDetailViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +212,7 @@
 				D9F6E0F01F9FEA3F00284341 /* LegendsHomeViewController.swift */,
 				D9F6E0F41F9FF20900284341 /* LegendsDetailViewController.swift */,
 				D91B75D01FA65DF5007F2100 /* LegendsListingView.swift */,
+				D9EF0BC21FB27A4400C097A8 /* LegendsVideoViewController.swift */,
 				D91B75CC1FA65DCF007F2100 /* LegendsListingView.xib */,
 				D970177B1FA79A0B0011664F /* UIViewExtension.swift */,
 				D9E39B911EDA037700061EEA /* LTVViewingViewController.swift */,
@@ -589,6 +594,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9EF0BC31FB27A4400C097A8 /* LegendsVideoViewController.swift in Sources */,
 				D9E39B921EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 				D9E39B8E1ED9D17400061EEA /* JSONHandler.swift in Sources */,
 				D9E39B9A1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
@@ -621,6 +627,7 @@
 				D9E39B9F1EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */,
 				D9E39B931EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 				D9E39B9B1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
+				D9EF0BC41FB27A4400C097A8 /* LegendsVideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -640,6 +647,7 @@
 				D9E39BA01EDA1A0B00061EEA /* LTVUpNextTableViewCell.swift in Sources */,
 				D9E39B941EDA037700061EEA /* LTVViewingViewController.swift in Sources */,
 				D9E39B9C1EDA19B800061EEA /* LTVDescriptionTableViewCell.swift in Sources */,
+				D9EF0BC51FB27A4400C097A8 /* LegendsVideoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

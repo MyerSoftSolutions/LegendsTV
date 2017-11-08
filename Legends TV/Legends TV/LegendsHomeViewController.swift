@@ -87,7 +87,8 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
     
     //MARK: ListingViewDelegate for when Play button tapped, segue to full Screen Video player
     func playPressed() {
-    
+        performSegue(withIdentifier: "PlayListingSegue", sender: self)
+
     }
     
     //MARK: UIScrollViewDelegate Methods
@@ -113,6 +114,13 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
             
             let dict = moviesArray?[currentPage] as AnyObject
             vc.viewingDict = dict["movie"] as? [String : AnyObject]
+        } else {
+            let navi = segue.destination as! UINavigationController
+            let vc = UIStoryboard(name: "V2UI", bundle: nil).instantiateViewController(withIdentifier: "LegendsVideoViewController") as! LegendsVideoViewController
+            navi.setViewControllers([vc], animated: true)
+            let dict = moviesArray?[currentPage] as AnyObject
+            vc.viewingDict = dict["movie"] as! [String : AnyObject]?
+
         }
     }
 }
