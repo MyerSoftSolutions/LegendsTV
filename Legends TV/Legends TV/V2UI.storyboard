@@ -64,8 +64,8 @@
                             <constraint firstItem="QbM-9R-6Fs" firstAttribute="leading" secondItem="1oy-lh-yYC" secondAttribute="leading" id="alA-ll-s4X"/>
                             <constraint firstItem="FhD-Nn-riR" firstAttribute="top" secondItem="Jwv-KN-Nwc" secondAttribute="bottom" constant="-1" id="fBA-xZ-hrA"/>
                             <constraint firstItem="FhD-Nn-riR" firstAttribute="centerX" secondItem="1oy-lh-yYC" secondAttribute="centerX" id="gcZ-Ou-IiC"/>
-                            <constraint firstItem="1oy-lh-yYC" firstAttribute="bottom" secondItem="NbK-ha-URr" secondAttribute="bottom" constant="583" id="hcF-gi-jGm"/>
                             <constraint firstItem="1oy-lh-yYC" firstAttribute="trailing" secondItem="NbK-ha-URr" secondAttribute="trailing" constant="235" id="vlv-BC-FtB"/>
+                            <constraint firstItem="Jwv-KN-Nwc" firstAttribute="top" relation="greaterThanOrEqual" secondItem="NbK-ha-URr" secondAttribute="bottom" constant="516" id="wpS-hM-V7Q"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="1oy-lh-yYC"/>
                     </view>
@@ -73,7 +73,6 @@
                         <outlet property="homePageControl" destination="Jwv-KN-Nwc" id="K8a-8K-MQE"/>
                         <outlet property="homeScrollView" destination="QbM-9R-6Fs" id="hjK-4x-TGR"/>
                         <outlet property="slideUpBtn" destination="FhD-Nn-riR" id="gov-rQ-Mxm"/>
-                        <segue destination="Agn-iR-lBJ" kind="show" identifier="PlayListingSegue" id="K0M-6a-CKD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F9j-ab-5l9" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -134,7 +133,6 @@
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT THE MOVIE" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DZr-fb-LMh">
                                                 <rect key="frame" x="15" y="142" width="345" height="31.5"/>
                                                 <fontDescription key="fontDescription" name="AppleSDGothicNeo-Regular" family="Apple SD Gothic Neo" pointSize="26"/>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zWU-Tc-GdO">
@@ -159,25 +157,25 @@
                                             <constraint firstAttribute="bottom" secondItem="DZr-fb-LMh" secondAttribute="bottom" constant="7.5" id="nQg-uO-ZTG"/>
                                         </constraints>
                                     </view>
-                                    <view alpha="0.25" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7C-2V-YQq">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="g7C-2V-YQq">
                                         <rect key="frame" x="0.0" y="181" width="375" height="486"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ABOUT THE MOVIE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O6a-at-XKE">
                                                 <rect key="frame" x="15" y="20" width="126.5" height="17"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                                <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="YcL-AM-7QD">
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YcL-AM-7QD">
                                                 <rect key="frame" x="11" y="45" width="353" height="406"/>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, q</string>
-                                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                                <color key="textColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                         </subviews>
-                                        <color key="backgroundColor" red="0.61131821065989844" green="0.61131821065989844" blue="0.61131821065989844" alpha="0.90790881849315064" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="backgroundColor" red="0.97186310279187815" green="0.97186310279187815" blue="0.97186310279187815" alpha="0.90790881849315064" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstItem="YcL-AM-7QD" firstAttribute="leading" secondItem="g7C-2V-YQq" secondAttribute="leading" constant="11" id="JFH-JQ-gZp"/>
                                             <constraint firstItem="O6a-at-XKE" firstAttribute="top" secondItem="g7C-2V-YQq" secondAttribute="top" constant="20" id="Mxu-JT-V8g"/>
@@ -224,11 +222,13 @@
         <!--Navigation Controller-->
         <scene sceneID="ktb-h9-keD">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Agn-iR-lBJ" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="navi" automaticallyAdjustsScrollViewInsets="NO" id="Agn-iR-lBJ" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="UfC-g0-NrR">
                         <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="barTintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>

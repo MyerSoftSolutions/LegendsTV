@@ -13,7 +13,7 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
     @IBOutlet weak var homeScrollView: UIScrollView!
     @IBOutlet weak var homePageControl: UIPageControl!
     @IBOutlet weak var slideUpBtn: UIButton!
-    
+
     let jsonHandler = JSONHandler.defaultHandler
 
     var moviesArray : [[String : Any]]?
@@ -22,6 +22,7 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
     var currentPage = 0
     override func viewDidLoad() {
         super.viewDidLoad()
+
         slideUpBtn.transform = CGAffineTransform(rotationAngle: CGFloat(Double.pi))
         
         moviesArray = jsonHandler.parseMovieArray()
@@ -44,7 +45,6 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
                 if let data = try? Data(contentsOf: url!) {
                     self.picsArray?.append(UIImage(data: data)!)
                 }
-                
             }
             DispatchQueue.main.sync {
                 //Create ScrollView of all Movie Pics
@@ -87,8 +87,13 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
     
     //MARK: ListingViewDelegate for when Play button tapped, segue to full Screen Video player
     func playPressed() {
-        performSegue(withIdentifier: "PlayListingSegue", sender: self)
-
+//        performSegue(withIdentifier: "PlayListingSegue", sender: self)
+        let navi = UIStoryboard(name: "V2UI", bundle: nil).instantiateViewController(withIdentifier: "navi") as! UINavigationController
+        let vc = navi.viewControllers[0] as! LegendsVideoViewController
+        
+        let dict = moviesArray?[currentPage] as AnyObject
+        vc.viewingDict = dict["movie"] as! [String : AnyObject]?
+        present(navi, animated: true, completion: nil)
     }
     
     //MARK: UIScrollViewDelegate Methods
@@ -114,13 +119,6 @@ class LegendsHomeViewController: UIViewController, UIScrollViewDelegate, Listing
             
             let dict = moviesArray?[currentPage] as AnyObject
             vc.viewingDict = dict["movie"] as? [String : AnyObject]
-        } else {
-            let navi = segue.destination as! UINavigationController
-            let vc = UIStoryboard(name: "V2UI", bundle: nil).instantiateViewController(withIdentifier: "LegendsVideoViewController") as! LegendsVideoViewController
-            navi.setViewControllers([vc], animated: true)
-            let dict = moviesArray?[currentPage] as AnyObject
-            vc.viewingDict = dict["movie"] as! [String : AnyObject]?
-
         }
     }
 }

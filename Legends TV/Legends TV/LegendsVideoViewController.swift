@@ -20,8 +20,12 @@ class LegendsVideoViewController: UIViewController, JWPlayerDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        createCustomBackButton("<-")
     }
-
+    override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
+        return .landscapeRight
+    }
+    
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
@@ -51,7 +55,7 @@ class LegendsVideoViewController: UIViewController, JWPlayerDelegate {
     }
     
     func navigationBackButtonClicked() {
-        navigationController?.popViewController(animated: true)
+        navigationController?.dismiss(animated: true, completion: nil)
     }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
