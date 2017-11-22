@@ -359,7 +359,7 @@
 						CreatedOnToolsVersion = 8.3.2;
 						DevelopmentTeam = BC8BB779VN;
 						LastSwiftMigration = 0830;
-						ProvisioningStyle = Automatic;
+						ProvisioningStyle = Manual;
 					};
 					D904B17D1EC9F17E006525C1 = {
 						CreatedOnToolsVersion = 8.3.2;
@@ -801,7 +801,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = BC8BB779VN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -814,8 +815,8 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "legends-tv-2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "2b0b8292-fb6d-414d-abb0-d4b52f4a9b5e";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: legends-tv-2017";
 				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TV-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -828,7 +829,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = BC8BB779VN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -841,8 +843,8 @@
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "legends-tv-2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE = "2b0b8292-fb6d-414d-abb0-d4b52f4a9b5e";
+				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: legends-tv-2017";
 				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TV-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
