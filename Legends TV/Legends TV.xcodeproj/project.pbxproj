@@ -810,13 +810,13 @@
 					"$(PROJECT_DIR)/Legends\\ TV",
 				);
 				INFOPLIST_FILE = "Legends TV/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "legends-tv-2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2b0b8292-fb6d-414d-abb0-d4b52f4a9b5e";
-				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: legends-tv-2017";
+				PROVISIONING_PROFILE = "1dcf5df9-c8c2-4edb-8649-e83b852c9ff5";
+				PROVISIONING_PROFILE_SPECIFIER = LegendsNew;
 				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TV-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
@@ -838,13 +838,13 @@
 					"$(PROJECT_DIR)/Legends\\ TV",
 				);
 				INFOPLIST_FILE = "Legends TV/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				OTHER_LDFLAGS = "-all_load";
 				PRODUCT_BUNDLE_IDENTIFIER = "legends-tv-2017";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "2b0b8292-fb6d-414d-abb0-d4b52f4a9b5e";
-				PROVISIONING_PROFILE_SPECIFIER = "XC iOS: legends-tv-2017";
+				PROVISIONING_PROFILE = "1dcf5df9-c8c2-4edb-8649-e83b852c9ff5";
+				PROVISIONING_PROFILE_SPECIFIER = LegendsNew;
 				SWIFT_OBJC_BRIDGING_HEADER = "Legends TV/Legends TV-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
